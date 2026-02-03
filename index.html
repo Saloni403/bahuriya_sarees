@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="web/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wdth,wght@0,75,189;1,75,189&family=Slabo+27px&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- toppest nav -->
+    <header class="sticky-top">
+        <section class="toppestnav py-2">
+            <div class="container">
+                <div class="d-flex gap-3 align-items-center justify-content-between">
+                    <img src="web/images/bahuriya logo.png" width="60" alt="">
+                    <div class="searchingbar d-sm-flex d-none">
+                        <div class="d-flex align-items-center w-100">
+                            <i class="bi bi-search"></i>&nbsp;
+                            <input type="text" id="searchInput" placeholder="Search">
+                        </div>
+                        <i class="bi bi-x-lg clear-btn"></i>
+                    </div>
+                    <div class="d-flex gap-md-5 gap-3">
+                        <div class="d-flex flex-column align-items-center">
+                            <i class="bi bi-person-circle"></i> <span class="d-md-block d-none">Profile</span>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <i class="bi bi-cart"></i> <span class="d-md-block d-none">Cart</span>
+                        </div>
+                        <i class="bi bi-list d-md-none"></i>
+                    </div>
+                </div>
+                <div class="searchingbar d-sm-none d-flex mt-3">
+                    <div class="d-flex align-items-center w-100">
+                        <i class="bi bi-search"></i>&nbsp;&nbsp;
+                        <input type="text" id="searchInput" placeholder="Search">
+                    </div>
+                    <i class="bi bi-x-lg clear-btn"></i>
+                </div>
+            </div>
+        </section>
+        <section class="bottomnav py-2 d-md-block d-none">
+            <div class="container">
+                <ul class="gap-xl-5 gap-3">
+                    <li>Georgette Sarees</li>
+                    <li>Chiffon Sarees</li>
+                    <li>Cotton Sarees</li>
+                    <li>Net Sarees</li>
+                    <li>Silk Sarees</li>
+                    <li>New Collection</li>
+                    <li>Bridal Sarees</li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <!-- banners  -->
+    <section class="bannermain">
+        <img src="web/images/b2.jpg" width="100%" alt="">
+        <div class="bannertext">
+            <h1 class="playfair-display-googlefont">New Arrival</h1>
+            <h3>Fancy Silk Sarees</h3>
+            <div class="button mt-sm-4 mt-3">
+                <span>Explore Now</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- bannerbottom -->
+    <div class="bannerbottom d-sm-block d-none">
+        <div class="d-flex align-items-center justify-content-center gap-4">
+            <div>
+                <img src="web/images/refund.png" width="20" alt="">
+                7 Days Easy Return
+            </div>
+            <span>|</span>
+            <div>
+                <img src="web/images/cash-on-delivery.png" width="20" alt="">
+                Cash on Delivery
+            </div>
+            <span>|</span>
+            <div>
+                <img src="web/images/low-price.png" width="20" alt="">
+                Lowest Prices
+            </div>
+        </div>
+    </div>
+
+    <!-- category list img size 211 : 211 -->
+    <section class="my-4">
+        <div class="container">
+            <div class="row autoplay overflow-hidden">
+                <div class="col-2 px-1">
+                    <div class="text-center">
+                        <div class="imgdiv">
+                            <img src="web/images/Chiffon_Sarees1-removebg-preview.png" alt="">
+                        </div>
+                        <span>Georgette</span>
+                    </div>
+                </div>
+
+                <div class="col-2 px-1">
+                    <div class="text-center">
+                        <div class="imgdiv">
+                            <img src="web/images/Net_Sarees-removebg-preview.png" alt="">
+                        </div>
+                        <span>Georgette</span>
+                    </div>
+                </div>
+
+                <div class="col-2 px-1">
+                    <div class="text-center">
+                        <div class="imgdiv">
+                            <img src="web/images/New_Collection-removebg-preview.png" alt="">
+                        </div>
+                        <span>Georgette</span>
+                    </div>
+                </div>
+
+                <div class="col-2 px-1">
+                    <div class="text-center">
+                        <div class="imgdiv">
+                            <img src="web/images/Chiffon_Sarees1-removebg-preview.png" alt="">
+                        </div>
+                        <span>Georgette</span>
+                    </div>
+                </div>
+
+                <div class="col-2 px-1">
+                    <div class="text-center">
+                        <div class="imgdiv">
+                            <img src="web/images/Chiffon_Sarees1-removebg-preview.png" alt="">
+                        </div>
+                        <span>Georgette</span>
+                    </div>
+                </div>
+
+                <div class="col-2 px-1">
+                    <div class="text-center">
+                        <div class="imgdiv">
+                            <img src="web/images/Chiffon_Sarees1-removebg-preview.png" alt="">
+                        </div>
+                        <span>Georgette</span>
+                    </div>
+                </div>
+
+                <div class="col-2 px-1">
+                    <div class="text-center">
+                        <div class="imgdiv">
+                            <img src="web/images/Chiffon_Sarees1-removebg-preview.png" alt="">
+                        </div>
+                        <span>Georgette</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- products -->
+    <section class="my-4">
+        <div class="text-center mb-3">
+            <h2>Products For You</h2>
+        </div>
+        <div class="filteratmobile d-lg-none mb-3">
+            <div class="d-flex gap-2">
+                <i class="bi bi-arrow-down-up"></i>
+                <p>SORT</p>
+            </div>
+            <div class="d-flex gap-2">
+                <i class="bi bi-filter"></i>
+                <p>FILTER</p>
+            </div>
+        </div>
+        <div class="productsec">
+
+            <div class="prod_left d-lg-block d-none">
+                <h3>Filters</h3>
+                <ul class="maindropdownlist">
+                    <li class="maindropdown">
+                        <span>SORT</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </li>
+
+                    <li class="sort-option">Price (High to Low)</li>
+                    <li class="sort-option">Price (Low to High)</li>
+                </ul>
+                <ul class="maindropdownlist designlist">
+                    <li class="maindropdown"><span>COLOR</span><i class="bi bi-chevron-down"></i></li>
+                    <li class="sort-option">Pink</li>
+                    <li class="sort-option">Multicolor</li>
+                    <li class="sort-option">Red</li>
+                    <li class="sort-option">Green</li>
+                    <li class="sort-option">Yellow</li>
+                    <li class="sort-option">Blue</li>
+                    <li class="sort-option">Purple</li>
+                    <li class="sort-option">Orange</li>
+                    <li class="sort-option">Grey</li>
+                    <li class="sort-option">Brown</li>
+                    <li class="sort-option">Beige</li>
+                    <li class="sort-option">Gold</li>
+                </ul>
+                <ul class="maindropdownlist designlist">
+                     <li class="maindropdown"><span>Fabric</span><i class="bi bi-chevron-down"></i></li>
+                    <li class="sort-option">Georgette</li>
+                    <li class="sort-option">Chiffon</li>
+                    <li class="sort-option">Cotton</li>
+                    <li class="sort-option">Net</li>
+                    <li class="sort-option">Silk</li>
+                    <li class="sort-option">New Collection</li>
+                    <li class="sort-option">Bridal</li>
+                </ul>
+            </div>
+            <div class="prod_right">
+                <div class="container">
+                    <div class="row g-2">
+                        <div class="col-xl-3 col-md-4 col-6">
+                            <div class="prod_card">
+                                <div>
+                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <i class="bi bi-heart-fill wishlisticon"></i>
+                                <div class="p-2 prod_card_desc">
+                                    <h6>HouseOfCommon</h6>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    <span>Pink</span>
+                                    <div class="pricediv">
+                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-6">
+                            <div class="prod_card">
+                                <div>
+                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <i class="bi bi-heart-fill wishlisticon"></i>
+                                <div class="p-2 prod_card_desc">
+                                    <h6>HouseOfCommon</h6>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    <span>Pink</span>
+                                    <div class="pricediv">
+                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-6">
+                            <div class="prod_card">
+                                <div>
+                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <i class="bi bi-heart-fill wishlisticon"></i>
+                                <div class="p-2 prod_card_desc">
+                                    <h6>HouseOfCommon</h6>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    <span>Pink</span>
+                                    <div class="pricediv">
+                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-6">
+                            <div class="prod_card">
+                                <div>
+                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <i class="bi bi-heart-fill wishlisticon"></i>
+                                <div class="p-2 prod_card_desc">
+                                    <h6>HouseOfCommon</h6>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    <span>Pink</span>
+                                    <div class="pricediv">
+                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-6">
+                            <div class="prod_card">
+                                <div>
+                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <i class="bi bi-heart-fill wishlisticon"></i>
+                                <div class="p-2 prod_card_desc">
+                                    <h6>HouseOfCommon</h6>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    <span>Pink</span>
+                                    <div class="pricediv">
+                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-6">
+                            <div class="prod_card">
+                                <div>
+                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <i class="bi bi-heart-fill wishlisticon"></i>
+                                <div class="p-2 prod_card_desc">
+                                    <h6>HouseOfCommon</h6>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    <span>Pink</span>
+                                    <div class="pricediv">
+                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-6">
+                            <div class="prod_card">
+                                <div>
+                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <i class="bi bi-heart-fill wishlisticon"></i>
+                                <div class="p-2 prod_card_desc">
+                                    <h6>HouseOfCommon</h6>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    <span>Pink</span>
+                                    <div class="pricediv">
+                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-6">
+                            <div class="prod_card">
+                                <div>
+                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <i class="bi bi-heart-fill wishlisticon"></i>
+                                <div class="p-2 prod_card_desc">
+                                    <h6>HouseOfCommon</h6>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    <span>Pink</span>
+                                    <div class="pricediv">
+                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="web/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        function changeBanner() {
+            let bannermain = document.querySelector(".bannermain img");
+
+            if (window.innerWidth < 768) {
+                bannermain.src = "web/images/b22.jpg";
+            } else {
+                bannermain.src = "web/images/b2.jpg";
+            }
+        }
+        changeBanner();
+        window.addEventListener("resize", changeBanner);
+
+
+
+        $('.autoplay').slick({
+            slidesToShow: 7,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 6
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 5
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+
+            ]
+
+
+        });
+
+    </script>
+</body>
+
+</html>
