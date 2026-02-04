@@ -20,16 +20,18 @@ a{
     text-decoration: none !important;
 }
 .button{
-padding: 0.75rem 1.25rem;
+padding: 0.65rem 1.25rem;
 border-radius: 5px;
 background-color: #fff;
 width: fit-content;
+border: 2px solid #fc9902;
 position: relative;
 z-index: 0;
 }
 .button span{
     font-weight: 500;
     position: relative;
+    color: #fc9902;
     z-index: 2;
 }
 .button::before{
@@ -46,6 +48,7 @@ z-index: 0;
 }
 .button:hover::before{
     width: 100%;
+    /* border: 2px solid #fc9902; */
 }
 .button:hover span{
    color: #fff !important;
@@ -373,14 +376,24 @@ position: relative;
    height: calc(100vh - 120px);
 }
 
+.prod_desc_page .prod_card{
+    margin: 0 2px;
+}
+
 .prod_card{
     position: relative;
 border: 2px solid #c0c0c038;
-
+height: 100%;
+ display: flex;
+    flex-direction: column;
+    cursor: pointer;
 }
 .prod_card_desc{
     background-color: #fff;
     transition: all 0.3s;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 .prod_card:hover{
    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -395,6 +408,9 @@ border: 2px solid #c0c0c038;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.pricediv{
+    margin-top: auto;
+}
 .pricediv del{
     color: #808080;
     font-size: 12px;
@@ -407,8 +423,19 @@ border: 2px solid #c0c0c038;
 .wishlisticon{
     position: absolute;
     right: 1rem;
+    font-size: 18px;
     top: 1rem;
     color: #808080;
+}
+.outofstock{
+    color: #4c0026;
+    background-color: antiquewhite;
+    width: fit-content;
+    font-size: 10px;
+    padding: 5px 8px;
+border: 1px solid #4c0026;
+border-radius: 5px;
+margin-top: 5px;
 }
 @media (min-width:992px) {
     .productsec{
@@ -489,3 +516,31 @@ footer ul li a:hover {
   font-weight:600;
 }
 
+/* product description page */
+/* product description left side - images side  */
+
+.thumbnail_imgs img{
+   border: 1px solid black;
+   aspect-ratio: 1 / 1;
+   object-fit: cover;
+   object-position: top;
+}
+.prod_desc_page_images .wishlisticon{
+   background-color: #ffffffa8;
+   padding: 8px;
+   top: 1.5rem;
+   border-radius: 50%;
+   display: flex;
+   
+   align-items: center;
+   justify-content: center;
+   aspect-ratio: 1 / 1;
+   line-height: 1; 
+}
+@media (max-width:1200px) {
+    .thumbnail_imgs{
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+}

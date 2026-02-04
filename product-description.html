@@ -75,7 +75,6 @@
         </section>
     </header>
 
-
     <!-- category list on mobile view -->
     <div class="ctglistdiv d-md-none">
         <div class="p-3 text-end">
@@ -92,295 +91,56 @@
         </ul>
     </div>
 
-    <!-- banners  -->
-    <section class="bannermain">
-        <img src="web/images/b2.jpg" width="100%" alt="">
-        <div class="bannertext">
-            <h1 class="playfair-display-googlefont">New Arrival</h1>
-            <h3>Fancy Silk Sarees</h3>
-            <div class="button mt-sm-4 mt-3">
-                <span>Explore Now</span>
-            </div>
-        </div>
-    </section>
 
-    <!-- bannerbottom -->
-    <div class="bannerbottom d-sm-block d-none">
-        <div class="d-flex align-items-center justify-content-center gap-4">
-            <div>
-                <img src="web/images/refund.png" width="20" alt="">
-                7 Days Easy Return
+<!-- showing product desc  size should be 3:4 with maximum 1000px-->
+ <section>
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-lg-5 col-10 border">
+                <div class="d-flex flex-xl-row flex-column-reverse gap-2 py-3 position-relative prod_desc_page_images">
+                    <div class="thumbnail_imgs d-flex flex-xl-column flex-row gap-2">
+                        <img src="web/images/prod_desc_img/pdes.jpg" width="60px" alt="">
+                        <img src="web/images/prod_desc_img/pdes1.jpg" width="60px" alt="">
+                        <img src="web/images/prod_desc_img/pdes2.jpg" width="60px" alt="">
+                        <img src="web/images/prod_desc_img/pdes3.jpg" width="60px" alt="">
+                        <img src="web/images/prod_desc_img/pdes4.jpg" width="60px" alt="">
+                    </div>
+                    <div class="thumbnail_mainimg">
+                        <img src="web/images/prod_desc_img/pdes.jpg" class="img-fluid" alt="">
+                    </div>
+                    <i class="bi bi-heart-fill wishlisticon"></i>
+                </div>
             </div>
-            <span>|</span>
-            <div>
-                <img src="web/images/cash-on-delivery.png" width="20" alt="">
-                Cash on Delivery
-            </div>
-            <span>|</span>
-            <div>
-                <img src="web/images/low-price.png" width="20" alt="">
-                Lowest Prices
+            <div class="col-lg-7 border">
+                <div>
+
+                </div>
             </div>
         </div>
     </div>
+ </section>
+ <script>
+    let thumbnail_imgs = document.querySelectorAll(".thumbnail_imgs img")
+    let thumbnail_mainimg = document.querySelector(".thumbnail_mainimg img")
+    thumbnail_imgs.forEach(images=>{
+        images.addEventListener("mouseenter",(e)=>{
+            thumbnail_imgs.forEach(all=>{all.style.borderColor="black";})
+            images.style.borderColor="red";
+            e.stopPropagation();
+            thumbnail_mainimg.src=images.src;
+        })
+    })
+ </script>
 
-    <!-- category list img size 211 : 211 -->
-    <section class="my-4">
-        <div class="container">
-            <div class="row autoplay overflow-hidden">
-                <div class="col-2 px-1">
-                    <div class="text-center">
-                        <div class="imgdiv">
-                            <img src="web/images/Chiffon_Sarees1-removebg-preview.png" alt="">
-                        </div>
-                        <span>Georgette</span>
-                    </div>
-                </div>
 
-                <div class="col-2 px-1">
-                    <div class="text-center">
-                        <div class="imgdiv">
-                            <img src="web/images/Net_Sarees-removebg-preview.png" alt="">
-                        </div>
-                        <span>Georgette</span>
-                    </div>
-                </div>
+    <!-- recently viewed products -->
+     <section class="prod_desc_page py-4 bg-light">
 
-                <div class="col-2 px-1">
-                    <div class="text-center">
-                        <div class="imgdiv">
-                            <img src="web/images/New_Collection-removebg-preview.png" alt="">
-                        </div>
-                        <span>Georgette</span>
-                    </div>
-                </div>
-
-                <div class="col-2 px-1">
-                    <div class="text-center">
-                        <div class="imgdiv">
-                            <img src="web/images/Chiffon_Sarees1-removebg-preview.png" alt="">
-                        </div>
-                        <span>Georgette</span>
-                    </div>
-                </div>
-
-                <div class="col-2 px-1">
-                    <div class="text-center">
-                        <div class="imgdiv">
-                            <img src="web/images/Chiffon_Sarees1-removebg-preview.png" alt="">
-                        </div>
-                        <span>Georgette</span>
-                    </div>
-                </div>
-
-                <div class="col-2 px-1">
-                    <div class="text-center">
-                        <div class="imgdiv">
-                            <img src="web/images/Chiffon_Sarees1-removebg-preview.png" alt="">
-                        </div>
-                        <span>Georgette</span>
-                    </div>
-                </div>
-
-                <div class="col-2 px-1">
-                    <div class="text-center">
-                        <div class="imgdiv">
-                            <img src="web/images/Chiffon_Sarees1-removebg-preview.png" alt="">
-                        </div>
-                        <span>Georgette</span>
-                    </div>
-                </div>
-            </div>
+ <div class="text-center mb-4">
+            <h2>Similar Products</h2>
         </div>
-    </section>
-
-    <!-- mobile filter div -->
-    <div class="sort_div d-lg-none">
-        <div class="p-3 text-end">
-            <i class="bi bi-x-lg"></i>
-        </div>
-        <form action="" class="p-3">
-            <div class="d-flex gap-2 py-2">
-                <input type="checkbox" name="" id="hightolow"><label for="hightolow">Price (High to Low)</label> <br>
-            </div>
-            <div class="d-flex gap-2 py-2">
-                <input type="checkbox" name="" id="lowtohigh"><label for="lowtohigh">Price (Low to High)</label>
-            </div>
-        </form>
-    </div>
-
-    <div class="filter_div d-lg-none">
-        <div class="p-3 text-end">
-            <i class="bi bi-x-lg"></i>
-        </div>
-        <ul class="maindropdownlist designlist">
-            <li class="maindropdown"><span>COLOR</span><i class="bi bi-chevron-down"></i></li>
-            <li class="sort-option">Pink</li>
-            <li class="sort-option">Multicolor</li>
-            <li class="sort-option">Red</li>
-            <li class="sort-option">Green</li>
-            <li class="sort-option">Yellow</li>
-            <li class="sort-option">Blue</li>
-            <li class="sort-option">Purple</li>
-            <li class="sort-option">Orange</li>
-            <li class="sort-option">Grey</li>
-            <li class="sort-option">Brown</li>
-            <li class="sort-option">Beige</li>
-            <li class="sort-option">Gold</li>
-        </ul>
-        <ul class="maindropdownlist designlist">
-            <li class="maindropdown"><span>Fabric</span><i class="bi bi-chevron-down"></i></li>
-            <li class="sort-option">Georgette</li>
-            <li class="sort-option">Chiffon</li>
-            <li class="sort-option">Cotton</li>
-            <li class="sort-option">Net</li>
-            <li class="sort-option">Silk</li>
-            <li class="sort-option">New Collection</li>
-            <li class="sort-option">Bridal</li>
-        </ul>
-        <ul class="maindropdownlist">
-            <li class="maindropdown ">
-                <span>PRICE</span>
-                <i class="bi bi-chevron-down"></i>
-            </li>
-
-            <li class="">
-                <form action="" class="sort-option mt-2">
-                    <div class="d-flex gap-3 align-items-center justify-content-between">
-                        <select name="" id="">
-                            <option value="Min">Min</option>
-                            <option value="300">300</option>
-                            <option value="500">500</option>
-                            <option value="700">700</option>
-                            <option value="1000">1000</option>
-                            <option value="1500">1500</option>
-                        </select>
-                        to
-                        <select name="" id="">
-                            <option value="300">300</option>
-                            <option value="500">500</option>
-                            <option value="700">700</option>
-                            <option value="1000">1000</option>
-                            <option value="1500">1500</option>
-                            <option value="1500+">1500+</option>
-                        </select>
-                    </div>
-                </form>
-            </li>
-        </ul>
-        <ul class="maindropdownlist">
-            <li class="maindropdown">
-                <span>DISCOUNT</span>
-                <i class="bi bi-chevron-down"></i>
-            </li>
-
-            <li class="sort-option">30% or more</li>
-            <li class="sort-option">40% or more</li>
-            <li class="sort-option">50% or more</li>
-            <li class="sort-option">60% or more</li>
-            <li class="sort-option">70% or more</li>
-        </ul>
-    </div>
-
-    <!-- products section one -->
-    <section class="mt-4">
-        <div class="text-center mb-4">
-            <h2>Products For You</h2>
-        </div>
-        <div class="filteratmobile d-lg-none mb-3">
-            <div class="d-flex gap-2 filteratmobile_sort">
-                <i class="bi bi-arrow-down-up"></i>
-                <p>SORT</p>
-            </div>
-            <div class="d-flex gap-2 filteratmobile_filter">
-                <i class="bi bi-filter"></i>
-                <p>FILTER</p>
-            </div>
-        </div>
-        <div class="productsec">
-
-            <div class="prod_left d-lg-block d-none">
-                <h3>Filters</h3>
-                <ul class="maindropdownlist">
-                    <li class="maindropdown">
-                        <span>SORT</span>
-                        <i class="bi bi-chevron-down"></i>
-                    </li>
-
-                    <li class="sort-option">Price (High to Low)</li>
-                    <li class="sort-option">Price (Low to High)</li>
-                </ul>
-                <ul class="maindropdownlist designlist">
-                    <li class="maindropdown"><span>COLOR</span><i class="bi bi-chevron-down"></i></li>
-                    <li class="sort-option">Pink</li>
-                    <li class="sort-option">Multicolor</li>
-                    <li class="sort-option">Red</li>
-                    <li class="sort-option">Green</li>
-                    <li class="sort-option">Yellow</li>
-                    <li class="sort-option">Blue</li>
-                    <li class="sort-option">Purple</li>
-                    <li class="sort-option">Orange</li>
-                    <li class="sort-option">Grey</li>
-                    <li class="sort-option">Brown</li>
-                    <li class="sort-option">Beige</li>
-                    <li class="sort-option">Gold</li>
-                </ul>
-                <ul class="maindropdownlist designlist">
-                    <li class="maindropdown"><span>Fabric</span><i class="bi bi-chevron-down"></i></li>
-                    <li class="sort-option">Georgette</li>
-                    <li class="sort-option">Chiffon</li>
-                    <li class="sort-option">Cotton</li>
-                    <li class="sort-option">Net</li>
-                    <li class="sort-option">Silk</li>
-                    <li class="sort-option">New Collection</li>
-                    <li class="sort-option">Bridal</li>
-                </ul>
-                <ul class="maindropdownlist">
-                    <li class="maindropdown ">
-                        <span>PRICE</span>
-                        <i class="bi bi-chevron-down"></i>
-                    </li>
-
-                    <li class="">
-                        <form action="" class="sort-option mt-2">
-                            <div class="d-flex gap-3 align-items-center justify-content-between">
-                                <select name="" id="">
-                                    <option value="Min">Min</option>
-                                    <option value="300">300</option>
-                                    <option value="500">500</option>
-                                    <option value="700">700</option>
-                                    <option value="1000">1000</option>
-                                    <option value="1500">1500</option>
-                                </select>
-                                to
-                                <select name="" id="">
-                                    <option value="300">300</option>
-                                    <option value="500">500</option>
-                                    <option value="700">700</option>
-                                    <option value="1000">1000</option>
-                                    <option value="1500">1500</option>
-                                    <option value="1500+">1500+</option>
-                                </select>
-                            </div>
-                        </form>
-                    </li>
-                </ul>
-                <ul class="maindropdownlist">
-                    <li class="maindropdown">
-                        <span>DISCOUNT</span>
-                        <i class="bi bi-chevron-down"></i>
-                    </li>
-
-                    <li class="sort-option">30% or more</li>
-                    <li class="sort-option">40% or more</li>
-                    <li class="sort-option">50% or more</li>
-                    <li class="sort-option">60% or more</li>
-                    <li class="sort-option">70% or more</li>
-                </ul>
-            </div>
-            <div class="prod_right mb-4">
-                <div class="container">
-                    <div class="row g-2">
+        <div class="container overflow-hidden mb-4">
+                    <div class="row autoplay">
                         <div class="col-xl-3 col-md-4 col-6">
                             <div class="prod_card">
                                 <div>
@@ -525,114 +285,12 @@
             </div>
             </div>
                 </div>
-            </div>
+
+ <div class="text-center mb-4">
+            <h2>Recently Viewed</h2>
         </div>
-    </section>
-
-    <!-- banner bottom -->
-    <section>
-        <img src="web/images/b1.png" width="100%" alt="">
-    </section>
-
-    <!-- products section two -->
-      <section class="mt-4">
-        <div class="text-center mb-4">
-            <h2>New Arrival</h2>
-        </div>
-        <div class="filteratmobile d-lg-none mb-3">
-            <div class="d-flex gap-2 filteratmobile_sort">
-                <i class="bi bi-arrow-down-up"></i>
-                <p>SORT</p>
-            </div>
-            <div class="d-flex gap-2 filteratmobile_filter">
-                <i class="bi bi-filter"></i>
-                <p>FILTER</p>
-            </div>
-        </div>
-        <div class="productsec">
-
-            <div class="prod_left d-lg-block d-none">
-                <h3>Filters</h3>
-                <ul class="maindropdownlist">
-                    <li class="maindropdown">
-                        <span>SORT</span>
-                        <i class="bi bi-chevron-down"></i>
-                    </li>
-
-                    <li class="sort-option">Price (High to Low)</li>
-                    <li class="sort-option">Price (Low to High)</li>
-                </ul>
-                <ul class="maindropdownlist designlist">
-                    <li class="maindropdown"><span>COLOR</span><i class="bi bi-chevron-down"></i></li>
-                    <li class="sort-option">Pink</li>
-                    <li class="sort-option">Multicolor</li>
-                    <li class="sort-option">Red</li>
-                    <li class="sort-option">Green</li>
-                    <li class="sort-option">Yellow</li>
-                    <li class="sort-option">Blue</li>
-                    <li class="sort-option">Purple</li>
-                    <li class="sort-option">Orange</li>
-                    <li class="sort-option">Grey</li>
-                    <li class="sort-option">Brown</li>
-                    <li class="sort-option">Beige</li>
-                    <li class="sort-option">Gold</li>
-                </ul>
-                <ul class="maindropdownlist designlist">
-                    <li class="maindropdown"><span>Fabric</span><i class="bi bi-chevron-down"></i></li>
-                    <li class="sort-option">Georgette</li>
-                    <li class="sort-option">Chiffon</li>
-                    <li class="sort-option">Cotton</li>
-                    <li class="sort-option">Net</li>
-                    <li class="sort-option">Silk</li>
-                    <li class="sort-option">New Collection</li>
-                    <li class="sort-option">Bridal</li>
-                </ul>
-                <ul class="maindropdownlist">
-                    <li class="maindropdown ">
-                        <span>PRICE</span>
-                        <i class="bi bi-chevron-down"></i>
-                    </li>
-
-                    <li class="">
-                        <form action="" class="sort-option mt-2">
-                            <div class="d-flex gap-3 align-items-center justify-content-between">
-                                <select name="" id="">
-                                    <option value="Min">Min</option>
-                                    <option value="300">300</option>
-                                    <option value="500">500</option>
-                                    <option value="700">700</option>
-                                    <option value="1000">1000</option>
-                                    <option value="1500">1500</option>
-                                </select>
-                                to
-                                <select name="" id="">
-                                    <option value="300">300</option>
-                                    <option value="500">500</option>
-                                    <option value="700">700</option>
-                                    <option value="1000">1000</option>
-                                    <option value="1500">1500</option>
-                                    <option value="1500+">1500+</option>
-                                </select>
-                            </div>
-                        </form>
-                    </li>
-                </ul>
-                <ul class="maindropdownlist">
-                    <li class="maindropdown">
-                        <span>DISCOUNT</span>
-                        <i class="bi bi-chevron-down"></i>
-                    </li>
-
-                    <li class="sort-option">30% or more</li>
-                    <li class="sort-option">40% or more</li>
-                    <li class="sort-option">50% or more</li>
-                    <li class="sort-option">60% or more</li>
-                    <li class="sort-option">70% or more</li>
-                </ul>
-            </div>
-            <div class="prod_right mb-4">
-                <div class="container">
-                    <div class="row g-2">
+        <div class="container overflow-hidden">
+                    <div class="row autoplay">
                         <div class="col-xl-3 col-md-4 col-6">
                             <div class="prod_card">
                                 <div>
@@ -771,18 +429,16 @@
                         </div>
                     </div>
 
-                    <div class="d-flex align-items-center justify-content-center">
+                   <div class="d-flex align-items-center justify-content-center">
                      <div class="button mt-sm-4 mt-3">
                 <span>view all</span>
             </div>
             </div>
                 </div>
-            </div>
-        </div>
-    </section>
+     </section>
 
     <!-- footer -->
-    <footer>
+      <footer>
         <div class="container py-5">
             <div class="row g-4">
                 <div class="col-lg-3 d-flex align-items-center justify-content-center text-center">
@@ -842,10 +498,10 @@
         </div>
     </footer>
 
+   
 
     <script src="web/js/script.js"></script>
     <script src="web/js/productrender.js"></script>
-    <script src="web/js/fiterscript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
@@ -855,22 +511,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
 
-        function changeBanner() {
-            let bannermain = document.querySelector(".bannermain img");
-
-            if (window.innerWidth < 768) {
-                bannermain.src = "web/images/b22.jpg";
-            } else {
-                bannermain.src = "web/images/b2.jpg";
-            }
-        }
-        changeBanner();
-        window.addEventListener("resize", changeBanner);
-
-
-
-        $('.autoplay').slick({
-            slidesToShow: 7,
+$('.autoplay').slick({
+            slidesToShow: 6,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
@@ -878,7 +520,7 @@
                 {
                     breakpoint: 1200,
                     settings: {
-                        slidesToShow: 6
+                        slidesToShow: 5
                     }
                 },
                 {
@@ -904,7 +546,6 @@
 
 
         });
-
     </script>
 </body>
 
