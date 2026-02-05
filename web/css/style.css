@@ -544,3 +544,126 @@ footer ul li a:hover {
     scrollbar-width: none;
 }
 }
+
+/* right side of the product description */
+.product_details {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.product_right h5{
+    color: #808080;
+}
+.rating_product > span{
+background-color: #fc9902;
+padding:1px 5px;
+color: #fff;
+border-radius: 5px;
+}
+.rating_product p{
+    color: #808080;
+    margin-bottom: 0;
+}
+.for_delivery_date label{
+    font-size: 12px;
+}
+.some_details > div{
+    font-size: 12px;
+}
+.product_details{
+    padding: 1rem 0;
+}
+.prod_info{
+display: none;
+transition:all 0.3s;
+width: 100%;
+}
+.prod_info tr{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    line-height: 1.8;
+}
+.prod_info td:nth-child(1){
+width: 20%; 
+color: #808080;
+font-weight: 600;
+font-size: 14px; 
+}
+.prod_info td:nth-child(2){
+width: 80%;  
+font-size: 14px; 
+}
+.prod_info.showing{
+display: block;
+}
+.review li{
+padding: 1rem 0;
+border-bottom: 1px solid #808080;
+}
+.customerimages{
+    overflow-x: scroll;
+    scrollbar-width: none;
+display: flex;
+}
+.customerimages img{
+    width: 80px;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: top;
+    border: 1px solid black;
+}
+.review{
+display: none;
+transition:all 0.3s;
+width: 100%;
+}
+.review.showing{
+    display: block;
+}
+@media (max-width:425px) {
+    .for_delivery_date input{
+        width: 120px;
+    }
+    .for_delivery_date input::placeholder{
+       font-size: 12px;
+    }
+.some_details img{
+    width: 20px;
+}
+.prod_info td:nth-child(1){
+   font-size: 12px;
+   width: 25%;
+}
+.prod_info td:nth-child(2){
+    width: 75%;
+}
+}
+@media (min-width:992px) {
+   .product_right .pricediv span b{
+font-size: 1.5rem;
+}
+.mmain{
+   position: sticky;
+   top: 120px;
+   max-height: fit-content;
+}
+}
+.colordiv
+{
+    margin-top: 1rem;
+    overflow-x: scroll;
+    scrollbar-width:none;
+    padding: 0 5px;
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+}
+.color{
+    height: 40px;
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    border: 1px solid black;
+    background-color: red;
+border-radius: 50%;
+}
