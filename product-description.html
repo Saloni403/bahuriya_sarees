@@ -106,9 +106,9 @@
                             <img src="web/images/prod_desc_img/pdes3.jpg" width="60px" alt="">
                             <img src="web/images/prod_desc_img/pdes4.jpg" width="60px" alt="">
                         </div>
-                        <div class="thumbnail_mainimg">
-                            <img src="web/images/prod_desc_img/pdes.jpg" class="img-fluid" alt="">
-                        </div>
+                       <div class="thumbnail_mainimg" id="imgContainer">
+  <img src="web/images/prod_desc_img/pdes.jpg" id="productImg" alt="">
+</div>
                         <i class="bi bi-heart-fill wishlisticon"></i>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                             </p>
                         </div>
                         <div class="colordiv"></div>
-                      
+
                         <div class="d-flex gap-3 mt-3">
                             <div class="button w-100 text-center bg-success border border-success">
                                 <span class="text-white"><i class="bi bi-bag"></i> Add to cart</span>
@@ -143,7 +143,8 @@
                                         AM</span></small></label>
                         </form>
 
-                        <div class="d-flex align-items-center justify-content-sm-start justify-content-between gap-sm-5 gap-2 my-5 some_details">
+                        <div
+                            class="d-flex align-items-center justify-content-sm-start justify-content-between gap-sm-5 gap-2 my-5 some_details">
                             <div class="d-flex flex-column align-items-center text-center">
                                 <img src="web/images/pin.png" width="50" alt="">
                                 All over world delivery
@@ -206,7 +207,7 @@
                         </div>
 
                         <div class="rating_section pt-3">
-                            
+
                             <div class="d-flex align-items-center justify-content-between">
                                 <h4>Ratings & Reviews</h4>
                                 <i class="bi bi-plus-lg" style="font-size: 1.5rem; color: #000000;"></i>
@@ -214,12 +215,12 @@
                             <div class="review mt-3">
                                 <div class="d-sm-flex align-items-center justify-content-between">
                                     <div class="rating_product my-2 d-flex gap-2 align-items-center">
-                                    <span>2.5&#9733;</span>
-                                    <p>
-                                        <span>1,271</span> ratings and <span>59</span> reviews
-                                    </p>
-                                </div>
-                                <a href="" class="btn btn-primary">Rate Product</a>
+                                        <span>2.5&#9733;</span>
+                                        <p>
+                                            <span>1,271</span> ratings and <span>59</span> reviews
+                                        </p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="btn btn-primary" onclick="showingForm()">Rate Product</a>
                                 </div>
                                 <hr>
                                 <ul>
@@ -228,17 +229,17 @@
                                             <span>4&#9733;</span>
                                             <p>
                                                 Saree is good but cloth is silk mixed
-                                            </p> <br>
+                                            </p> 
                                         </div>
-                                         <p><small>Apr, 2023</small> | <small>Chennai</small></p>
-                                         <div class="customerimages">
+                                        <!-- <p><small>Apr, 2023</small> | <small>Chennai</small></p> -->
+                                        <div class="customerimages">
                                             <img src="web/images/prod_desc_img/pdes.jpg" alt="">
                                             <img src="web/images/prod_desc_img/pdes.jpg" alt="">
                                             <img src="web/images/prod_desc_img/pdes.jpg" alt="">
                                             <img src="web/images/prod_desc_img/pdes.jpg" alt="">
                                             <img src="web/images/prod_desc_img/pdes.jpg" alt="">
                                             <img src="web/images/prod_desc_img/pdes.jpg" alt="">
-                                         </div>
+                                        </div>
                                     </li>
 
 
@@ -247,13 +248,13 @@
                                             <span>4&#9733;</span>
                                             <p>
                                                 Saree is good but cloth is silk mixed
-                                            </p> <br>
+                                            </p>
                                         </div>
-                                         <p><small>Apr, 2023</small> | <small>Chennai</small></p>
-                                         <div class="customerimages">
+                                        <!-- <p><small>Apr, 2023</small> | <small>Chennai</small></p> -->
+                                        <div class="customerimages">
                                             <img src="web/images/prod_desc_img/pdes.jpg" alt="">
                                             <img src="web/images/prod_desc_img/pdes.jpg" alt="">
-                                         </div>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -264,7 +265,7 @@
             </div>
         </div>
     </section>
-   
+
 
     <!-- recently viewed products -->
     <section class="prod_desc_page py-4 bg-light">
@@ -574,7 +575,7 @@
     <footer>
         <div class="container py-5">
             <div class="row g-4">
-                <div class="col-lg-3 d-flex align-items-center justify-content-center text-center">
+                <div class="col-lg-3 d-flex justify-content-center text-center">
                     <div>
                         <img src="web/images/bahuriya logo.png" width="100px">
                         <p style="font-size: 12px; margin-top: 0.75rem;"> A saree is more than just an outfit — it is a
@@ -631,7 +632,31 @@
         </div>
     </footer>
 
+    <!-- rating form -->
+     <section class="ratingdiv_section">
+  <div class="ratingdiv">
+  <form id="ratingForm" class="d-flex align-items-center justify-content-center flex-column">
+    <div class="text-end w-100">
+    <i class="bi bi-x-lg closeratingform" style="color: #fff; cursor: pointer;"></i>
+    </div>
+    <p class="stars">
+      <span class="star" data-value="1">&#9733;</span>
+      <span class="star" data-value="2">&#9733;</span>
+      <span class="star" data-value="3">&#9733;</span>
+      <span class="star" data-value="4">&#9733;</span>
+      <span class="star" data-value="5">&#9733;</span>
+    </p>
 
+    <div class="mb-3 inputimg">
+    <input type="file" name="" id="">
+        </div>
+
+    <textarea rows="2" placeholder="Message"></textarea>
+
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  </form>
+</div>
+</section>
 
     <script src="web/js/script.js"></script>
     <script src="web/js/productrender.js"></script>
@@ -680,6 +705,74 @@
 
 
         });
+
+ function showingForm() {
+    document.querySelector(".ratingdiv_section").style.display = "flex";
+  }
+
+  function hideForm() {
+    document.querySelector(".ratingdiv_section").style.display = "none";
+  }
+
+  // close when clicking X
+  document.querySelector(".closeratingform").addEventListener("click", hideForm);
+
+  // close when clicking outside the form
+  document.querySelector(".ratingdiv_section").addEventListener("click", function (e) {
+    if (e.target.classList.contains("ratingdiv_section")) {
+      hideForm();
+    }
+  });
+
+  const stars = document.querySelectorAll(".star");
+  let selectedRating = 0;
+
+  stars.forEach(star => {
+    star.addEventListener("click", () => {
+      selectedRating = star.getAttribute("data-value");
+
+      stars.forEach(s => s.classList.remove("active"));
+
+      for (let i = 0; i < selectedRating; i++) {
+        stars[i].classList.add("active");
+      }
+    });
+  });
+
+  document.getElementById("ratingForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    if (selectedRating === 0) {
+      alert("Please select a rating");
+      return;
+    }
+
+    alert("Rating submitted: " + selectedRating + " star(s)");
+    
+    // later you can send this to backend using fetch / ajax
+  });
+
+// zoom in effect or zoom lens
+    const container = document.getElementById("imgContainer");
+  const img = document.getElementById("productImg");
+
+  container.addEventListener("mousemove", (e) => {
+    const rect = container.getBoundingClientRect();
+
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const xPercent = (x / rect.width) * 100;
+    const yPercent = (y / rect.height) * 100;
+
+    img.style.transformOrigin = `${xPercent}% ${yPercent}%`;
+    img.style.transform = "scale(2)";
+  });
+
+  container.addEventListener("mouseleave", () => {
+    img.style.transform = "scale(1)";
+    img.style.transformOrigin = "center center";
+  });
     </script>
 </body>
 
