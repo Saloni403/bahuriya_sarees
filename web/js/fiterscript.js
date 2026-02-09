@@ -1,20 +1,23 @@
 // mobile filter
 const sort_div= document.querySelector(".sort_div")
 const filteratmobile_sort = document.querySelectorAll(".filteratmobile_sort")
+const filter_div= document.querySelector(".filter_div")
+const filteratmobile_filter = document.querySelectorAll(".filteratmobile_filter")
+
 filteratmobile_sort.forEach(showing=>{
 showing.addEventListener("click",()=>{
 sort_div.classList.add('show')
+filter_div.classList.remove('show')
 })
 })
 const sort_div_close = sort_div.querySelector(".bi-x-lg").addEventListener("click",()=>{
 sort_div.classList.remove('show')
 })
 
-const filter_div= document.querySelector(".filter_div")
-const filteratmobile_filter = document.querySelectorAll(".filteratmobile_filter")
 filteratmobile_filter.forEach(showing=>{
 showing.addEventListener("click",()=>{
 filter_div.classList.add('show')
+sort_div.classList.remove('show')
 })
 })
 const filter_div_close = filter_div.querySelector(".bi-x-lg").addEventListener("click",()=>{

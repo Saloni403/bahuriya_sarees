@@ -25,6 +25,7 @@
 
 <body>
 
+  
     <!-- toppest nav -->
     <header class="sticky-top">
         <section class="toppestnav py-2">
@@ -39,15 +40,17 @@
                         <i class="bi bi-x-lg clear-btn"></i>
                     </div>
                     <div class="d-flex gap-lg-5 gap-3">
-                        <div class="d-flex flex-column align-items-center">
+                        <a href="" class="d-flex flex-column align-items-center text-dark">
                             <i class="bi bi-person-circle"></i> <span class="d-md-block d-none">Profile</span>
-                        </div>
-                        <div class="d-flex flex-column align-items-center">
+                        </a>
+                        <a href="cart.html" class="d-flex flex-column align-items-center text-dark position-relative">
                             <i class="bi bi-cart"></i> <span class="d-md-block d-none">Cart</span>
-                        </div>
-                        <div class="d-flex flex-column align-items-center">
+                            <div class="cart_numbering">34</div>
+                        </a>
+                        <a href="wishlist.html" class="d-flex flex-column align-items-center text-dark position-relative">
                             <i class="bi bi-heart"></i> <span class="d-md-block d-none">Wishlist</span>
-                        </div>
+                            <div class="wishlist_numbering">43</div>
+                        </a>
                         <i class="bi bi-list d-md-none openctg"></i>
                     </div>
                 </div>
@@ -63,13 +66,13 @@
         <section class="bottomnav py-2 d-md-block d-none">
             <div class="container">
                 <ul class="gap-xl-5 gap-3">
-                    <li>Georgette Sarees</li>
-                    <li>Chiffon Sarees</li>
-                    <li>Cotton Sarees</li>
-                    <li>Net Sarees</li>
-                    <li>Silk Sarees</li>
-                    <li>New Collection</li>
-                    <li>Bridal Sarees</li>
+                    <li><a href="product.html">Georgette Sarees</a></li>
+                    <li><a href="product.html">Chiffon Sarees</a></li>
+                    <li><a href="product.html">Cotton Sarees</a></li>
+                    <li><a href="product.html">Net Sarees</a></li>
+                    <li><a href="product.html">Silk Sarees</a></li>
+                    <li><a href="product.html">New Collection</a></li>
+                    <li><a href="product.html">Bridal Sarees</a></li>
                 </ul>
             </div>
         </section>
@@ -82,20 +85,356 @@
             <i class="bi bi-x-lg ctgclose"></i>
         </div>
         <ul class="ctglist">
-            <li class="active">Georgette Sarees</li>
-            <li>Chiffon Sarees</li>
-            <li>Cotton Sarees</li>
-            <li>Net Sarees</li>
-            <li>Silk Sarees</li>
-            <li>New Collection</li>
-            <li>Bridal Sarees</li>
+            <li class="active"><a href="product.html">Georgette Sarees</a></li>
+            <li><a href="product.html">Chiffon Sarees</a></li>
+            <li><a href="product.html">Cotton Sarees</a></li>
+            <li><a href="product.html">Net Sarees</a></li>
+            <li><a href="product.html">Silk Sarees</a></li>
+            <li><a href="product.html">New Collection</a></li>
+            <li><a href="product.html">Bridal Sarees</a></li>
         </ul>
     </div>
 
-      <footer>
+      <!-- products section one -->
+    <section class="mt-4">
+        <div class="text-center mb-4">
+            <h2>Products For You</h2>
+        </div>
+        <div class="filteratmobile d-lg-none mb-3">
+            <div class="d-flex gap-2 filteratmobile_sort">
+                <i class="bi bi-arrow-down-up"></i>
+                <p>SORT</p>
+            </div>
+            <div class="d-flex gap-2 filteratmobile_filter">
+                <i class="bi bi-filter"></i>
+                <p>FILTER</p>
+            </div>
+        </div>
+        <div class="productsec">
+
+            <div class="prod_left d-lg-block d-none">
+                <h3>Filters</h3>
+                <ul class="maindropdownlist">
+                    <li class="maindropdown">
+                        <span>SORT</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </li>
+
+                    <li class="sort-option">Price (High to Low)</li>
+                    <li class="sort-option">Price (Low to High)</li>
+                </ul>
+                <ul class="maindropdownlist designlist">
+                    <li class="maindropdown"><span>COLOR</span><i class="bi bi-chevron-down"></i></li>
+                    <li class="sort-option">Pink</li>
+                    <li class="sort-option">Multicolor</li>
+                    <li class="sort-option">Red</li>
+                    <li class="sort-option">Green</li>
+                    <li class="sort-option">Yellow</li>
+                    <li class="sort-option">Blue</li>
+                    <li class="sort-option">Purple</li>
+                    <li class="sort-option">Orange</li>
+                    <li class="sort-option">Grey</li>
+                    <li class="sort-option">Brown</li>
+                    <li class="sort-option">Beige</li>
+                    <li class="sort-option">Gold</li>
+                </ul>
+                <ul class="maindropdownlist designlist">
+                    <li class="maindropdown"><span>Fabric</span><i class="bi bi-chevron-down"></i></li>
+                    <li class="sort-option">Georgette</li>
+                    <li class="sort-option">Chiffon</li>
+                    <li class="sort-option">Cotton</li>
+                    <li class="sort-option">Net</li>
+                    <li class="sort-option">Silk</li>
+                    <li class="sort-option">New Collection</li>
+                    <li class="sort-option">Bridal</li>
+                </ul>
+                <ul class="maindropdownlist">
+                    <li class="maindropdown ">
+                        <span>PRICE</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </li>
+
+                    <li class="">
+                        <form action="" class="sort-option mt-2">
+                            <div class="d-flex gap-3 align-items-center justify-content-between">
+                                <select name="" id="">
+                                    <option value="Min">Min</option>
+                                    <option value="300">300</option>
+                                    <option value="500">500</option>
+                                    <option value="700">700</option>
+                                    <option value="1000">1000</option>
+                                    <option value="1500">1500</option>
+                                </select>
+                                to
+                                <select name="" id="">
+                                    <option value="300">300</option>
+                                    <option value="500">500</option>
+                                    <option value="700">700</option>
+                                    <option value="1000">1000</option>
+                                    <option value="1500">1500</option>
+                                    <option value="1500+">1500+</option>
+                                </select>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="maindropdownlist">
+                    <li class="maindropdown">
+                        <span>DISCOUNT</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </li>
+
+                    <li class="sort-option">30% or more</li>
+                    <li class="sort-option">40% or more</li>
+                    <li class="sort-option">50% or more</li>
+                    <li class="sort-option">60% or more</li>
+                    <li class="sort-option">70% or more</li>
+                </ul>
+            </div>
+            <div class="prod_right mb-4">
+                <div class="container">
+                    <div class="row g-2">
+                        <div class="col-xl-3 col-md-4 col-6">
+                            <div class="prod_card">
+                                <div>
+                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <i class="bi bi-heart-fill wishlisticon"></i>
+                                <div class="p-2 prod_card_desc">
+                                    <h6>HouseOfCommon</h6>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    <span>Pink</span>
+                                    <div class="pricediv">
+                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
+                                    </div>
+                                    <span class="outofstock">Out of stock</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-6">
+                            <div class="prod_card">
+                                <div>
+                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <i class="bi bi-heart-fill wishlisticon"></i>
+                                <div class="p-2 prod_card_desc">
+                                    <h6>HouseOfCommon</h6>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    <span>Pink</span>
+                                    <div class="pricediv">
+                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-6">
+                            <div class="prod_card">
+                                <div>
+                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <i class="bi bi-heart-fill wishlisticon"></i>
+                                <div class="p-2 prod_card_desc">
+                                    <h6>HouseOfCommon</h6>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    <span>Pink</span>
+                                    <div class="pricediv">
+                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-6">
+                            <div class="prod_card">
+                                <div>
+                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <i class="bi bi-heart-fill wishlisticon"></i>
+                                <div class="p-2 prod_card_desc">
+                                    <h6>HouseOfCommon</h6>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    <span>Pink</span>
+                                    <div class="pricediv">
+                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-6">
+                            <div class="prod_card">
+                                <div>
+                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <i class="bi bi-heart-fill wishlisticon"></i>
+                                <div class="p-2 prod_card_desc">
+                                    <h6>HouseOfCommon</h6>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    <span>Pink</span>
+                                    <div class="pricediv">
+                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-6">
+                            <div class="prod_card">
+                                <div>
+                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <i class="bi bi-heart-fill wishlisticon"></i>
+                                <div class="p-2 prod_card_desc">
+                                    <h6>HouseOfCommon</h6>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    <span>Pink</span>
+                                    <div class="pricediv">
+                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-6">
+                            <div class="prod_card">
+                                <div>
+                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <i class="bi bi-heart-fill wishlisticon"></i>
+                                <div class="p-2 prod_card_desc">
+                                    <h6>HouseOfCommon</h6>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    <span>Pink</span>
+                                    <div class="pricediv">
+                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-6">
+                            <div class="prod_card">
+                                <div>
+                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <i class="bi bi-heart-fill wishlisticon"></i>
+                                <div class="p-2 prod_card_desc">
+                                    <h6>HouseOfCommon</h6>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    <span>Pink</span>
+                                    <div class="pricediv">
+                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                   <div class="d-flex align-items-center justify-content-center mt-sm-4 mt-3">
+                     <a href="" class="button ">
+                <span>view more</span>
+            </a>
+            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- mobile filter div -->
+    <div class="sort_div d-lg-none">
+        <div class="p-3 text-end">
+            <i class="bi bi-x-lg"></i>
+        </div>
+        <form action="" class="p-3">
+            <div class="d-flex gap-2 py-2">
+                <input type="checkbox" name="" id="hightolow"><label for="hightolow">Price (High to Low)</label> <br>
+            </div>
+            <div class="d-flex gap-2 py-2">
+                <input type="checkbox" name="" id="lowtohigh"><label for="lowtohigh">Price (Low to High)</label>
+            </div>
+        </form>
+    </div>
+
+    <div class="filter_div d-lg-none">
+        <div class="p-3 text-end">
+            <i class="bi bi-x-lg"></i>
+        </div>
+        <ul class="maindropdownlist designlist">
+            <li class="maindropdown"><span>COLOR</span><i class="bi bi-chevron-down"></i></li>
+            <li class="sort-option">Pink</li>
+            <li class="sort-option">Multicolor</li>
+            <li class="sort-option">Red</li>
+            <li class="sort-option">Green</li>
+            <li class="sort-option">Yellow</li>
+            <li class="sort-option">Blue</li>
+            <li class="sort-option">Purple</li>
+            <li class="sort-option">Orange</li>
+            <li class="sort-option">Grey</li>
+            <li class="sort-option">Brown</li>
+            <li class="sort-option">Beige</li>
+            <li class="sort-option">Gold</li>
+        </ul>
+        <ul class="maindropdownlist designlist">
+            <li class="maindropdown"><span>Fabric</span><i class="bi bi-chevron-down"></i></li>
+            <li class="sort-option">Georgette</li>
+            <li class="sort-option">Chiffon</li>
+            <li class="sort-option">Cotton</li>
+            <li class="sort-option">Net</li>
+            <li class="sort-option">Silk</li>
+            <li class="sort-option">New Collection</li>
+            <li class="sort-option">Bridal</li>
+        </ul>
+        <ul class="maindropdownlist">
+            <li class="maindropdown ">
+                <span>PRICE</span>
+                <i class="bi bi-chevron-down"></i>
+            </li>
+
+            <li class="">
+                <form action="" class="sort-option mt-2">
+                    <div class="d-flex gap-3 align-items-center justify-content-between">
+                        <select name="" id="">
+                            <option value="Min">Min</option>
+                            <option value="300">300</option>
+                            <option value="500">500</option>
+                            <option value="700">700</option>
+                            <option value="1000">1000</option>
+                            <option value="1500">1500</option>
+                        </select>
+                        to
+                        <select name="" id="">
+                            <option value="300">300</option>
+                            <option value="500">500</option>
+                            <option value="700">700</option>
+                            <option value="1000">1000</option>
+                            <option value="1500">1500</option>
+                            <option value="1500+">1500+</option>
+                        </select>
+                    </div>
+                </form>
+            </li>
+        </ul>
+        <ul class="maindropdownlist">
+            <li class="maindropdown">
+                <span>DISCOUNT</span>
+                <i class="bi bi-chevron-down"></i>
+            </li>
+
+            <li class="sort-option">30% or more</li>
+            <li class="sort-option">40% or more</li>
+            <li class="sort-option">50% or more</li>
+            <li class="sort-option">60% or more</li>
+            <li class="sort-option">70% or more</li>
+        </ul>
+    </div>
+
+    <!-- footer-->
+  <footer>
         <div class="container py-5">
             <div class="row g-4">
-                <div class="col-lg-3 d-flex align-items-center justify-content-center text-center">
+                <div class="col-lg-3 d-flex align-items-start justify-content-center text-center">
                     <div>
                         <img src="web/images/bahuriya logo.png" width="100px">
                         <p style="font-size: 12px; margin-top: 0.75rem;"> A saree is more than just an outfit — it is a
@@ -106,13 +445,13 @@
                     <div>
                         <h2>Sarees</h2>
                         <ul>
-                            <li><a href="#">Silk Sarees</a></li>
-                            <li><a href="#">New Collection</a></li>
-                            <li><a href="#">Bridal Sarees</a></li>
-                            <li><a href="#">Net Sarees</a></li>
-                            <li><a href="#">Cotton Sarees</a></li>
-                            <li><a href="#">Chiffon Sarees</a></li>
-                            <li><a href="#">Georgette Sarees</a></li>
+                            <li><a href="product.html">Silk Sarees</a></li>
+                            <li><a href="product.html">New Collection</a></li>
+                            <li><a href="product.html">Bridal Sarees</a></li>
+                            <li><a href="product.html">Net Sarees</a></li>
+                            <li><a href="product.html">Cotton Sarees</a></li>
+                            <li><a href="product.html">Chiffon Sarees</a></li>
+                            <li><a href="product.html">Georgette Sarees</a></li>
                         </ul>
                     </div>
                 </div>
@@ -120,8 +459,8 @@
                     <div>
                         <h2>Quick Linkes</h2>
                         <ul>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Privacy & Policy</a></li>
+                            <li><a href="term&condition.html">Terms & Conditions</a></li>
+                            <li><a href="privacy&policy.html">Privacy & Policy</a></li>
                             <li><a href="#">Shipping Policy</a></li>
                             <li><a href="#">Add to Cart</a></li>
                             <li><a href="#">Wishlist</a></li>
@@ -154,8 +493,9 @@
 
 
 
-
     <script src="web/js/script.js"></script>
+     <script src="web/js/productrender.js"></script>
+     <script src="web/js/fiterscript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
@@ -164,19 +504,6 @@
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-
-        function changeBanner() {
-            let bannermain = document.querySelector(".bannermain img");
-
-            if (window.innerWidth < 768) {
-                bannermain.src = "web/images/b22.jpg";
-            } else {
-                bannermain.src = "web/images/b2.jpg";
-            }
-        }
-        changeBanner();
-        window.addEventListener("resize", changeBanner);
-
 
 
         $('.autoplay').slick({

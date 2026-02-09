@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahuriya | Cart</title>
+      <link rel="stylesheet" href="web/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wdth,wght@0,75,189;1,75,189&family=Slabo+27px&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+     <!-- toppest nav -->
+    <header class="sticky-top">
+        <section class="toppestnav py-2">
+            <div class="container">
+                <div class="d-flex gap-3 align-items-center justify-content-between">
+                    <img src="web/images/bahuriya logo.png" width="60" alt="">
+                    <div class="searchingbar d-sm-flex d-none">
+                        <div class="d-flex align-items-center w-100">
+                            <i class="bi bi-search"></i>&nbsp;
+                            <input type="text" id="searchInput" placeholder="Search">
+                        </div>
+                        <i class="bi bi-x-lg clear-btn"></i>
+                    </div>
+                    <div class="d-flex gap-lg-5 gap-3">
+                        <a href="" class="d-flex flex-column align-items-center text-dark">
+                            <i class="bi bi-person-circle"></i> <span class="d-md-block d-none">Profile</span>
+                        </a>
+                        <a href="cart.html" class="d-flex flex-column align-items-center text-dark position-relative">
+                            <i class="bi bi-cart"></i> <span class="d-md-block d-none">Cart</span>
+                            <div class="cart_numbering">34</div>
+                        </a>
+                        <a href="wishlist.html" class="d-flex flex-column align-items-center text-dark position-relative">
+                            <i class="bi bi-heart"></i> <span class="d-md-block d-none">Wishlist</span>
+                            <div class="wishlist_numbering">43</div>
+                        </a>
+                        <i class="bi bi-list d-md-none openctg"></i>
+                    </div>
+                </div>
+                <div class="searchingbar d-sm-none d-flex mt-3">
+                    <div class="d-flex align-items-center w-100">
+                        <i class="bi bi-search"></i>&nbsp;&nbsp;
+                        <input type="text" id="searchInput" placeholder="Search">
+                    </div>
+                    <i class="bi bi-x-lg clear-btn"></i>
+                </div>
+            </div>
+        </section>
+        <section class="bottomnav py-2 d-md-block d-none">
+            <div class="container">
+                <ul class="gap-xl-5 gap-3">
+                    <li><a href="product.html">Georgette Sarees</a></li>
+                    <li><a href="product.html">Chiffon Sarees</a></li>
+                    <li><a href="product.html">Cotton Sarees</a></li>
+                    <li><a href="product.html">Net Sarees</a></li>
+                    <li><a href="product.html">Silk Sarees</a></li>
+                    <li><a href="product.html">New Collection</a></li>
+                    <li><a href="product.html">Bridal Sarees</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+
+    <!-- category list on mobile view -->
+    <div class="ctglistdiv d-md-none">
+        <div class="p-3 text-end">
+            <i class="bi bi-x-lg ctgclose"></i>
+        </div>
+        <ul class="ctglist">
+            <li class="active"><a href="product.html">Georgette Sarees</a></li>
+            <li><a href="product.html">Chiffon Sarees</a></li>
+            <li><a href="product.html">Cotton Sarees</a></li>
+            <li><a href="product.html">Net Sarees</a></li>
+            <li><a href="product.html">Silk Sarees</a></li>
+            <li><a href="product.html">New Collection</a></li>
+            <li><a href="product.html">Bridal Sarees</a></li>
+        </ul>
+    </div>
+
+<!-- Terms & Conditions Section -->
+<section class="terms-section py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9 col-md-11">
+
+                <h1 class="text-center mb-4">Terms & Conditions</h1>
+
+                <div class="terms-box">
+
+                    <h5>1. Introduction</h5>
+                    <p>
+                        Welcome to <strong>Bahuriya</strong>. By accessing or using our website,
+                        you agree to comply with and be bound by the following terms and conditions.
+                    </p>
+
+                    <h5>2. Product Information</h5>
+                    <p>
+                        We strive to display accurate product descriptions and images.
+                        Minor variations in color or design may occur due to photography or screen resolution.
+                    </p>
+
+                    <h5>3. Pricing & Availability</h5>
+                    <p>
+                        Prices are subject to change without prior notice.
+                        Product availability may vary depending on stock.
+                    </p>
+
+                    <h5>4. Orders & Payments</h5>
+                    <p>
+                        All orders placed are subject to confirmation.
+                        Payments must be completed through approved payment methods only.
+                    </p>
+
+                    <h5>5. Shipping & Delivery</h5>
+                    <p>
+                        Delivery timelines are estimated and may vary due to location,
+                        courier delays, or unforeseen circumstances.
+                    </p>
+
+                    <h5>6. Returns & Refunds</h5>
+                    <p>
+                        Returns are accepted within <strong>10 days</strong> of delivery,
+                        provided the product is unused and in original condition.
+                    </p>
+
+                    <h5>7. User Responsibilities</h5>
+                    <p>
+                        Users must provide accurate personal information and
+                        must not misuse the website for unlawful activities.
+                    </p>
+
+                    <h5>8. Intellectual Property</h5>
+                    <p>
+                        All content, including images, logos, and text, is the property of Bahuriya
+                        and may not be copied without permission.
+                    </p>
+
+                    <h5>9. Changes to Terms</h5>
+                    <p>
+                        Bahuriya reserves the right to update or modify these terms at any time
+                        without prior notice.
+                    </p>
+
+                </div>
+
+               
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-3 d-flex align-items-start justify-content-center text-center">
+                    <div>
+                        <img src="web/images/bahuriya logo.png" width="100px">
+                        <p style="font-size: 12px; margin-top: 0.75rem;"> A saree is more than just an outfit — it is a
+                            timeless expression of grace, culture, and elegance.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div>
+                        <h2>Sarees</h2>
+                        <ul>
+                            <li><a href="product.html">Silk Sarees</a></li>
+                            <li><a href="product.html">New Collection</a></li>
+                            <li><a href="product.html">Bridal Sarees</a></li>
+                            <li><a href="product.html">Net Sarees</a></li>
+                            <li><a href="product.html">Cotton Sarees</a></li>
+                            <li><a href="product.html">Chiffon Sarees</a></li>
+                            <li><a href="product.html">Georgette Sarees</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div>
+                        <h2>Quick Linkes</h2>
+                        <ul>
+                            <li><a href="term&condition.html">Terms & Conditions</a></li>
+                            <li><a href="privacy&policy.html">Privacy & Policy</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Add to Cart</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div>
+                        <h2>Contact Us</h2>
+                        <ul>
+                            <li> <a href=""><strong>Email:</strong> info@Bahuriya.com</a></li>
+                            <li> <a href=""><strong>Phone:</strong> +91 9876543210</a></li>
+                        </ul>
+
+                        <div class="footer-social">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 Bahuriya | Designed & Developed by
+            <a href="https://tssgtech.com" target="_blank">Tssg-Tech</a>
+        </div>
+    </footer>
+     <script src="web/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+     
+
+</body>
+</html>
