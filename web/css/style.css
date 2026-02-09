@@ -538,7 +538,9 @@ footer ul li a:hover {
    line-height: 1; 
 }
 .thumbnail_mainimg{
-    overflow: hidden;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
     cursor: zoom-in;
 }
 .thumbnail_mainimg img{
