@@ -40,7 +40,7 @@ a{
    transform: translateX(-50%);
 }
 .button{
-padding: 0.65rem 1.25rem;
+padding: 0.5rem 1.25rem;
 border-radius: 5px;
 background-color: #fff;
 width: fit-content;
@@ -842,58 +842,30 @@ textarea {
 }
 
 
-
+/*  */
 
 /* term and condition */
 /* Terms & Conditions Page */
-.terms-section {
+/* privacy & policy */
+.privacy-policy, .terms-section, .shipping-policy{
     background-color: #f8f9fa;
 }
-
-.terms-section h1 {
+.terms-section h1 , .privacy-policy h1, .shipping-policy h1 {
     font-weight: 600;
 }
 
-.terms-box {
+.policy-content, .terms-box {
     background: #ffffff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 12px rgba(0,0,0,0.06);
 }
 
-.terms-box h5 {
+.terms-box h5 ,.policy-content h5 {
     margin-top: 20px;
     font-weight: 600;
 }
-
-.terms-box p {
-    font-size: 15px;
-    color: #555;
-    line-height: 1.7;
-}
-
-.terms-accept {
-    font-size: 14px;
-}
-
-@media (max-width: 576px) {
-    .terms-box {
-        padding: 20px;
-    }
-}
-
-/* privacy & policy */
-.privacy-policy h1 {
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.policy-content h4 {
-    margin-top: 1.5rem;
-    font-weight: 600;
-}
-
-.policy-content p,
+.policy-content p,.terms-box p ,
 .policy-content ul {
     font-size: 15px;
     color: #555;
@@ -903,3 +875,147 @@ textarea {
 .policy-content ul {
     padding-left: 1.2rem;
 }
+
+
+@media (max-width: 576px) {
+    .terms-box , .policy-content {
+        padding: 20px;
+    }
+}
+
+
+/* dashboard */
+
+        .user-dashboard {
+            background: #f5f6fa;
+        }
+
+        .dashboard-sidebar {
+            background: linear-gradient(180deg, #4c0026f7, #4c0026);
+            min-height: 100vh;
+            color: #fff;
+            z-index: 999;
+        }
+
+        .sidebar-inner {
+            position: sticky;
+            top: 0;
+        }
+
+        .dashboard-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .dashboard-menu li {
+            padding: 14px 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        .dashboard-menu li a {
+            color: #fff;
+        }
+
+        .dashboard-menu li:hover,
+        .dashboard-menu li.active {
+            background: rgba(255, 255, 255, 0.15);
+            
+        }
+
+        .dashboard-menu li.logout a {
+            color: #ffb3b3;
+        }
+@media (max-width:768px) {
+    .dashboard-sidebar{
+        position: fixed;
+        transition: 0.3s;
+        top: -100%;
+    }
+     .dashboard-sidebar.showing{
+        top: 70px;
+    }
+}
+@media (max-width:576px) {
+   
+     .dashboard-sidebar.showing{
+        top: 120px;
+    }
+}
+        .dashboard-content, .profile , .edit-details{
+            padding: 30px;
+        }
+      
+        .dashboard-section{
+            display: none;
+}
+ .dashboard-section.showing{
+            display: block;
+}
+        .dash-card {
+            background: #4c0026;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .dash-card h2 {
+            margin: 0;
+        }
+.dashboard-content .table-responsive {
+    overflow-x: scroll !important;
+    scrollbar-width: none;
+    /* width:100%; */
+   /* width: 576px; */
+}
+
+
+.dashboard-content .table-responsive .table {
+    width:100% !important;
+    min-width: 576px !important;
+}
+@media (max-width:576px) {
+    .dashboard-content .table-responsive .table td,  .dashboard-content .table-responsive .table tr{
+    font-size: 14px;
+}
+}
+
+        .editform{
+            width: 100%;
+            max-width: 800px;
+          
+        }
+        .editform input{ 
+            width: 100%;
+            /* max-width: 397.5px; */
+            padding: 0.5rem 1rem;
+margin-bottom: 0.5rem;
+border: 1px solid #4c0026;
+        }
+        .editform textarea{
+           width: 100%;
+            /* max-width:800px; */
+            border: 1px solid #4c0026;
+            border-radius: 0 ;
+        }
+        .editform input:focus-visible, .editform textarea:focus-visible{
+outline: none;
+        }
+        @media (min-width:992px) {
+             .editform input{ 
+            max-width: 397.5px;
+        }
+        }
+
+        /* tracking order */
+        .tracking_order{
+          background-color: #f8f9fa;
+        }
+        .tracking_order .container{
+background-color: #fff;
+        }
