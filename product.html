@@ -105,11 +105,11 @@
             <h2>Products For You</h2>
         </div>
         <div class="filteratmobile d-lg-none mb-3">
-            <div class="d-flex gap-2 filteratmobile_sort">
+            <div class="d-flex gap-2 align-items-center justify-content-center filteratmobile_sort w-100">
                 <i class="bi bi-arrow-down-up"></i>
                 <p>SORT</p>
             </div>
-            <div class="d-flex gap-2 filteratmobile_filter">
+            <div class="d-flex gap-2 align-items-center justify-content-center filteratmobile_filter w-100">
                 <i class="bi bi-filter"></i>
                 <p>FILTER</p>
             </div>
@@ -312,7 +312,7 @@
     </section>
 
 
-  <!-- mobile filter div -->
+ <!-- mobile filter div -->
     <div class="sort_div d-lg-none">
         <div class="p-3 text-end">
             <i class="bi bi-x-lg"></i>
@@ -324,6 +324,9 @@
             <div class="d-flex gap-2 py-2">
                 <input type="checkbox" name="" id="lowtohigh"><label for="lowtohigh">Price (Low to High)</label>
             </div>
+            <div class="pt-3">
+                    <button class="btn btn-light" type="submit">Apply</button>
+                </div>
         </form>
     </div>
 
@@ -347,7 +350,7 @@
             <li class="sort-option">Gold</li>
         </ul>
         <ul class="maindropdownlist designlist">
-            <li class="maindropdown"><span>Fabric</span><i class="bi bi-chevron-down"></i></li>
+            <li class="maindropdown"><span>FABRIC</span><i class="bi bi-chevron-down"></i></li>
             <li class="sort-option">Georgette</li>
             <li class="sort-option">Chiffon</li>
             <li class="sort-option">Cotton</li>
@@ -359,31 +362,24 @@
         <ul class="maindropdownlist">
             <li class="maindropdown ">
                 <span>PRICE</span>
-                <i class="bi bi-chevron-down"></i>
+                <!-- <i class="bi bi-chevron-down"></i> -->
             </li>
 
             <li class="">
-                <form action="" class="sort-option mt-2">
-                    <div class="d-flex gap-3 align-items-center justify-content-between">
-                        <select name="" id="">
-                            <option value="Min">Min</option>
-                            <option value="300">300</option>
-                            <option value="500">500</option>
-                            <option value="700">700</option>
-                            <option value="1000">1000</option>
-                            <option value="1500">1500</option>
-                        </select>
-                        to
-                        <select name="" id="">
-                            <option value="300">300</option>
-                            <option value="500">500</option>
-                            <option value="700">700</option>
-                            <option value="1000">1000</option>
-                            <option value="1500">1500</option>
-                            <option value="1500+">1500+</option>
-                        </select>
-                    </div>
-                </form>
+                <div class="price-range mt-3">
+
+                            <div class="price-values d-flex justify-content-between mb-3">
+                                <span>₹<span class="minPrice">300</span></span>
+                                <span>₹<span class="maxPrice">1500</span></span>
+                            </div>
+
+                            <div class="slider">
+                                <div class="slider-track"></div>
+                                <input type="range" min="300" max="1500" value="300" class="rangeMin">
+                                <input type="range" min="300" max="1500" value="1500" class="rangeMax">
+                            </div>
+
+                        </div>
             </li>
         </ul>
         <ul class="maindropdownlist">
@@ -398,6 +394,9 @@
             <li class="sort-option">60% or more</li>
             <li class="sort-option">70% or more</li>
         </ul>
+         <div class="p-3">
+                    <button class="btn btn-light" type="submit">Apply</button>
+                </div>
     </div>
 
     <!-- footer -->

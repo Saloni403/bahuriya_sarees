@@ -200,14 +200,16 @@ width: 100%;
  z-index: 99;
 }
 .ctglist li{
-padding: 1rem;
-border-bottom: 1px solid pink;
+    border-bottom: 1px solid pink;
 border-left: 3px solid transparent;
 border-right: 3px solid transparent;
 font-weight: 500;
 }
 .ctglist li a{
     color: #000;
+    padding: 1rem;
+    display: inline-block;
+    width: 100%;
 }
 .ctglist li:hover{
     background-color: #fff;
@@ -232,26 +234,30 @@ top: 120px;
 /* sort div */
 .sort_div{
   width:100%;
- background-color:rgb(251, 221, 226);
+ background-color:#4c0026;
+ color: #fff;
  position: fixed;
  left: 0;
  bottom: -100%;
  transition: 0.3s;
  z-index: 99;
- border-top: 3px solid #4c0026;
+ border-top: 3px solid #fc9902;
  z-index: 99;
 }
 
 .filter_div{
   width:100%;
- background-color:rgb(251, 221, 226);
+ background-color: #4c0026;
+ color: #fff;
  position: fixed;
  left: 0;
  bottom: -100%;
  transition: 0.3s;
  z-index: 99;
- border-top: 3px solid #4c0026;
+ border-top: 3px solid #fc9902;
  z-index: 9999;
+ height: 65vh;
+ overflow-y: auto;
 }
 .sort_div.show , .filter_div.show{
 bottom: 0;
@@ -352,12 +358,12 @@ flex-direction: column;
 /* filter at mobile view */
 .filteratmobile{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    
     border: 2px solid #4c0026;
     padding: 0.5rem 0;
     position: relative;
     background-color: #fff;
+    
     color: #4c0026;
 }
 .filteratmobile p{
