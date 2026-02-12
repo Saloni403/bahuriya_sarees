@@ -25,13 +25,17 @@
 
 <body>
 
-  
+ <!-- whatsapp icon on page -->
+ <div class="whatsapp_icon">
+     <a href="https://wa.me/917269010957" target="_blank"><img src="web/images/whatsapp.png" width="50" alt=""></a>
+ </div>
+
     <!-- toppest nav -->
     <header class="sticky-top">
         <section class="toppestnav py-2">
             <div class="container">
                 <div class="d-flex gap-3 align-items-center justify-content-between">
-                    <img src="web/images/bahuriya logo.png" width="60" alt="">
+                    <a href="index.html"><img src="web/images/bahuriya logo.png" width="60" alt=""></a>
                     <div class="searchingbar d-sm-flex d-none">
                         <div class="d-flex align-items-center w-100">
                             <i class="bi bi-search"></i>&nbsp;
@@ -40,7 +44,7 @@
                         <i class="bi bi-x-lg clear-btn"></i>
                     </div>
                     <div class="d-flex gap-lg-5 gap-3">
-                        <a href="" class="d-flex flex-column align-items-center text-dark">
+                        <a href="login.html" class="d-flex flex-column align-items-center text-dark">
                             <i class="bi bi-person-circle"></i> <span class="d-md-block d-none">Profile</span>
                         </a>
                         <a href="cart.html" class="d-flex flex-column align-items-center text-dark position-relative">
@@ -96,7 +100,7 @@
     </div>
 
       <!-- products section one -->
-    <section class="mt-4">
+    <section class="pt-4 pb-lg-0 pb-4" style=" background: linear-gradient(90deg, rgb(251, 221, 226) 0%, #fbe9ce 100%);">
         <div class="text-center mb-4">
             <h2>Products For You</h2>
         </div>
@@ -113,7 +117,7 @@
         <div class="productsec">
 
             <div class="prod_left d-lg-block d-none">
-                <h3>Filters</h3>
+                <h3 class="ms-3 mt-3">FILTERS</h3>
                 <ul class="maindropdownlist">
                     <li class="maindropdown">
                         <span>SORT</span>
@@ -139,7 +143,7 @@
                     <li class="sort-option">Gold</li>
                 </ul>
                 <ul class="maindropdownlist designlist">
-                    <li class="maindropdown"><span>Fabric</span><i class="bi bi-chevron-down"></i></li>
+                    <li class="maindropdown"><span>FABRIC</span><i class="bi bi-chevron-down"></i></li>
                     <li class="sort-option">Georgette</li>
                     <li class="sort-option">Chiffon</li>
                     <li class="sort-option">Cotton</li>
@@ -148,36 +152,32 @@
                     <li class="sort-option">New Collection</li>
                     <li class="sort-option">Bridal</li>
                 </ul>
-                <ul class="maindropdownlist">
-                    <li class="maindropdown ">
-                        <span>PRICE</span>
-                        <i class="bi bi-chevron-down"></i>
-                    </li>
+               <ul class="maindropdownlist">
+    <li class="maindropdown">
+        <span>PRICE</span>
+        <!-- <i class="bi bi-chevron-down"></i> -->
+    </li>
 
-                    <li class="">
-                        <form action="" class="sort-option mt-2">
-                            <div class="d-flex gap-3 align-items-center justify-content-between">
-                                <select name="" id="">
-                                    <option value="Min">Min</option>
-                                    <option value="300">300</option>
-                                    <option value="500">500</option>
-                                    <option value="700">700</option>
-                                    <option value="1000">1000</option>
-                                    <option value="1500">1500</option>
-                                </select>
-                                to
-                                <select name="" id="">
-                                    <option value="300">300</option>
-                                    <option value="500">500</option>
-                                    <option value="700">700</option>
-                                    <option value="1000">1000</option>
-                                    <option value="1500">1500</option>
-                                    <option value="1500+">1500+</option>
-                                </select>
-                            </div>
-                        </form>
-                    </li>
-                </ul>
+    <li>
+       <div class="price-range mt-3">
+
+    <div class="price-values d-flex justify-content-between mb-3">
+        <span>₹<span class="minPrice">300</span></span>
+        <span>₹<span class="maxPrice">1500</span></span>
+    </div>
+
+    <div class="slider">
+        <div class="slider-track"></div>
+        <input type="range" min="300" max="1500" value="300" class="rangeMin">
+        <input type="range" min="300" max="1500" value="1500" class="rangeMax">
+    </div>
+
+</div>
+
+    </li>
+</ul>
+
+
                 <ul class="maindropdownlist">
                     <li class="maindropdown">
                         <span>DISCOUNT</span>
@@ -191,15 +191,33 @@
                     <li class="sort-option">70% or more</li>
                 </ul>
             </div>
-            <div class="prod_right mb-4">
+            <div class="prod_right mb-lg-4">
                 <div class="container">
                     <div class="row g-2">
-                        <div class="col-xl-3 col-md-4 col-6">
-                            <div class="prod_card">
+                       
+                     <div class="col-xl-3 col-md-4 col-6">
+                            <a href="product-description.html" class="prod_card">
                                 <div>
                                     <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
                                 </div>
-                                <i class="bi bi-heart-fill wishlisticon"></i>
+                              <i class="bi bi-heart-fill wishlisticon" onclick="event.stopPropagation(); event.preventDefault(); location.href='wishlist.html';"></i> 
+                                <div class="p-2 prod_card_desc">
+                                    <h6>HouseOfCommon</h6>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    <span>Pink</span>
+                                    <div class="pricediv">
+                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-6">
+                            <a href="product-description.html" class="prod_card">
+                                <div>
+                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
+                                </div>
+                             <i class="bi bi-heart-fill wishlisticon" onclick="event.stopPropagation(); event.preventDefault(); location.href='wishlist.html';"></i>  
                                 <div class="p-2 prod_card_desc">
                                     <h6>HouseOfCommon</h6>
                                     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
@@ -209,15 +227,15 @@
                                     </div>
                                     <span class="outofstock">Out of stock</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
-                        <div class="col-xl-3 col-md-4 col-6">
-                            <div class="prod_card">
+                       <div class="col-xl-3 col-md-4 col-6">
+                            <a href="product-description.html" class="prod_card">
                                 <div>
                                     <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
                                 </div>
-                                <i class="bi bi-heart-fill wishlisticon"></i>
+                              <i class="bi bi-heart-fill wishlisticon" onclick="event.stopPropagation(); event.preventDefault(); location.href='wishlist.html';"></i>  
                                 <div class="p-2 prod_card_desc">
                                     <h6>HouseOfCommon</h6>
                                     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
@@ -226,15 +244,33 @@
                                         <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="col-xl-3 col-md-4 col-6">
-                            <div class="prod_card">
+                            <a href="product-description.html" class="prod_card">
                                 <div>
                                     <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
                                 </div>
-                                <i class="bi bi-heart-fill wishlisticon"></i>
+                             <i class="bi bi-heart-fill wishlisticon" onclick="event.stopPropagation(); event.preventDefault(); location.href='wishlist.html';"></i>  
+                                <div class="p-2 prod_card_desc">
+                                    <h6>HouseOfCommon</h6>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    <span>Pink</span>
+                                    <div class="pricediv">
+                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
+                                    </div>
+                                    <span class="outofstock">Out of stock</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-6">
+                            <a href="product-description.html" class="prod_card">
+                                <div>
+                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
+                                </div>
+                              <i class="bi bi-heart-fill wishlisticon" onclick="event.stopPropagation(); event.preventDefault(); location.href='wishlist.html';"></i>  
                                 <div class="p-2 prod_card_desc">
                                     <h6>HouseOfCommon</h6>
                                     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
@@ -243,15 +279,15 @@
                                         <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="col-xl-3 col-md-4 col-6">
-                            <div class="prod_card">
+                            <a href="product-description.html" class="prod_card">
                                 <div>
                                     <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
                                 </div>
-                                <i class="bi bi-heart-fill wishlisticon"></i>
+                             <i class="bi bi-heart-fill wishlisticon" onclick="event.stopPropagation(); event.preventDefault(); location.href='wishlist.html';"></i>  
                                 <div class="p-2 prod_card_desc">
                                     <h6>HouseOfCommon</h6>
                                     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
@@ -259,88 +295,22 @@
                                     <div class="pricediv">
                                         <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
                                     </div>
+                                    <span class="outofstock">Out of stock</span>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-3 col-md-4 col-6">
-                            <div class="prod_card">
-                                <div>
-                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
-                                </div>
-                                <i class="bi bi-heart-fill wishlisticon"></i>
-                                <div class="p-2 prod_card_desc">
-                                    <h6>HouseOfCommon</h6>
-                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                                    <span>Pink</span>
-                                    <div class="pricediv">
-                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-3 col-md-4 col-6">
-                            <div class="prod_card">
-                                <div>
-                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
-                                </div>
-                                <i class="bi bi-heart-fill wishlisticon"></i>
-                                <div class="p-2 prod_card_desc">
-                                    <h6>HouseOfCommon</h6>
-                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                                    <span>Pink</span>
-                                    <div class="pricediv">
-                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-3 col-md-4 col-6">
-                            <div class="prod_card">
-                                <div>
-                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
-                                </div>
-                                <i class="bi bi-heart-fill wishlisticon"></i>
-                                <div class="p-2 prod_card_desc">
-                                    <h6>HouseOfCommon</h6>
-                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                                    <span>Pink</span>
-                                    <div class="pricediv">
-                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-3 col-md-4 col-6">
-                            <div class="prod_card">
-                                <div>
-                                    <img src="web/images/sarees1.jpg" class="img-fluid" alt="">
-                                </div>
-                                <i class="bi bi-heart-fill wishlisticon"></i>
-                                <div class="p-2 prod_card_desc">
-                                    <h6>HouseOfCommon</h6>
-                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                                    <span>Pink</span>
-                                    <div class="pricediv">
-                                        <span><b>&#8377; 799</b> <del>&#8377;1300</del> <small>67% off</small></span>
-                                    </div>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
 
-                   <div class="d-flex align-items-center justify-content-center mt-sm-4 mt-3">
-                     <a href="" class="button ">
-                <span>view more</span>
+                    <div class="d-flex align-items-center justify-content-center">
+                     <a href="product.html" class="button mt-sm-4 mt-3">
+                <span>view all</span>
             </a>
             </div>
                 </div>
             </div>
         </div>
     </section>
+
 
   <!-- mobile filter div -->
     <div class="sort_div d-lg-none">
@@ -430,13 +400,14 @@
         </ul>
     </div>
 
-    <!-- footer-->
-  <footer>
+    <!-- footer -->
+    <footer class="mt-3 pt-5 position-relative">
         <div class="container py-5">
             <div class="row g-4">
                 <div class="col-lg-3 d-flex align-items-start justify-content-center text-center">
                     <div>
-                        <img src="web/images/bahuriya logo.png" width="100px">
+                        <a href="index.html">
+                    <img src="web/images/bahuriya logo.png" width="100px"></a>
                         <p style="font-size: 12px; margin-top: 0.75rem;"> A saree is more than just an outfit — it is a
                             timeless expression of grace, culture, and elegance.</p>
                     </div>
@@ -461,10 +432,10 @@
                         <ul>
                             <li><a href="term&condition.html">Terms & Conditions</a></li>
                             <li><a href="privacy&policy.html">Privacy & Policy</a></li>
-                            <li><a href="#">Shipping Policy</a></li>
-                            <li><a href="#">Add to Cart</a></li>
-                            <li><a href="#">Wishlist</a></li>
-                            <li><a href="#">Profile</a></li>
+                            <li><a href="shipping.html">Shipping Policy</a></li>
+                            <li><a href="cart.html">Add to Cart</a></li>
+                            <li><a href="wishlist.html">Wishlist</a></li>
+                            <li><a href="login.html">Profile</a></li>
                         </ul>
                     </div>
                 </div>
@@ -472,25 +443,25 @@
                     <div>
                         <h2>Contact Us</h2>
                         <ul>
-                            <li> <a href=""><strong>Email:</strong> info@Bahuriya.com</a></li>
-                            <li> <a href=""><strong>Phone:</strong> +91 9876543210</a></li>
+                            <li> <a href="https://wa.me/917269010957" target="_blank"><strong>Email:</strong> info@Bahuriya.com</a></li>
+                            <li> <a href="https://wa.me/917269010957" target="_blank"><strong>Phone:</strong> +91 7269010957</a></li>
                         </ul>
 
                         <div class="footer-social">
-                            <a href="#"><i class="bi bi-facebook"></i></a>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-                            <a href="#"><i class="bi bi-whatsapp"></i></a>
+                            <a href="https://wa.me/917269010957" target="_blank"><i class="bi bi-facebook"></i></a>
+                            <a href="https://wa.me/917269010957" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="https://wa.me/917269010957" target="_blank"><i class="bi bi-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <img src="web/images/shape.svg" class="img-fluid position-absolute top-0" alt="">
         <div class="footer-bottom">
             © 2026 Bahuriya | Designed & Developed by
             <a href="https://tssgtech.com" target="_blank">Tssg-Tech</a>
         </div>
     </footer>
-
 
 
     <script src="web/js/script.js"></script>
@@ -543,6 +514,54 @@
         });
 
     </script>
+       <script>
+document.querySelectorAll(".price-range").forEach((priceBox) => {
+
+    const minSlider = priceBox.querySelector(".rangeMin");
+    const maxSlider = priceBox.querySelector(".rangeMax");
+    const minPrice = priceBox.querySelector(".minPrice");
+    const maxPrice = priceBox.querySelector(".maxPrice");
+    const track = priceBox.querySelector(".slider-track");
+
+    function updateSlider() {
+
+        let minVal = parseInt(minSlider.value);
+        let maxVal = parseInt(maxSlider.value);
+        let min = parseInt(minSlider.min);
+        let max = parseInt(minSlider.max);
+
+        if (minVal >= maxVal) {
+            minSlider.value = maxVal - 100;
+            minVal = maxVal - 100;
+        }
+
+        if (maxVal <= minVal) {
+            maxSlider.value = minVal + 100;
+            maxVal = minVal + 100;
+        }
+
+        let percentMin = ((minVal - min) / (max - min)) * 100;
+        let percentMax = ((maxVal - min) / (max - min)) * 100;
+
+        track.style.background = `
+            linear-gradient(to right,
+            #ddd ${percentMin}%,
+            #e91e63 ${percentMin}%,
+            #e91e63 ${percentMax}%,
+            #ddd ${percentMax}%)
+        `;
+
+        minPrice.textContent = minVal;
+        maxPrice.textContent = maxVal;
+    }
+
+    minSlider.addEventListener("input", updateSlider);
+    maxSlider.addEventListener("input", updateSlider);
+
+    updateSlider();
+});
+</script>
+
 </body>
 
 </html>
