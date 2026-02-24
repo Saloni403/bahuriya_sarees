@@ -15,3 +15,9 @@ const ctgclose = document.querySelector(".ctgclose").addEventListener("click",()
     ctglistdiv.style.left="-100%"
 })
 
+let couponcode = document.querySelector(".couponcode")
+let couponcodeleft = document.querySelector(".couponcodeleft")
+couponcodeleft.addEventListener("click",()=>{
+    couponcode.classList.toggle("showing")
+    couponcodeleft.querySelector("i").classList.toggle("active")
+})

@@ -24,6 +24,43 @@
 </head>
 
 <body>
+  
+<!-- coupon code of the page -->
+<div class="couponcode d-sm-flex d-none">
+<div class="couponcodeleft">
+    <h4>UPTO &#8377;200 OFF <i class="bi bi-caret-right-fill"></i></h4>
+</div>
+<div class="d-flex gap-3 flex-column ">
+<div class="couponcoderight pt-3">
+    <div class="pe-5">
+<small>Avail Upto</small>
+<h1>200 OFF</h1>
+    </div>
+    <div class="imgs">
+    <img src="web/images/couponimg.jpg" class="" alt="">
+    </div>
+</div>
+
+<div class="couponcoderight2 pb-3">
+    <div>
+<p class="mb-0"><b>Coupon Code: <span>MYNTRASAVE</span></b></p>
+<small>Applicable on your first order</small>
+    </div>
+    <div class="mt-sm-4 mt-3">
+                <a href="product.html" class="button">
+                    <span>Sign up now</span>
+                </a>
+            </div>
+</div>
+<div class="couponcoderight3">
+<div><i class="bi bi-patch-check"></i> Genuine Products</div>
+<div><i class="bi bi-patch-check"></i> Easy Returns</div>
+<div><i class="bi bi-patch-check"></i> Easy Exchanges</div>
+</div>
+</div>
+</div>
+<!-- coupon code of the page -->
+
     <!-- whatsapp icon on page -->
     <div class="whatsapp_icon">
         <a href="https://wa.me/917269010957" target="_blank"><img src="web/images/whatsapp.png" width="50" alt=""></a>
@@ -128,7 +165,7 @@
             <span>|</span>
             <div>
                 <img src="web/images/low-price.png" width="20" alt="">
-                Lowest Prices
+                Budget Friendly
             </div>
         </div>
     </div>
@@ -216,8 +253,8 @@
                 <input type="checkbox" name="" id="lowtohigh"><label for="lowtohigh">Price (Low to High)</label>
             </div>
             <div class="pt-3">
-                    <button class="btn btn-light" type="submit">Apply</button>
-                </div>
+                <button class="btn btn-light" type="submit">Apply</button>
+            </div>
         </form>
     </div>
 
@@ -259,18 +296,18 @@
             <li class="">
                 <div class="price-range mt-3">
 
-                            <div class="price-values d-flex justify-content-between mb-3">
-                                <span>₹<span class="minPrice">300</span></span>
-                                <span>₹<span class="maxPrice">1500</span></span>
-                            </div>
+                    <div class="price-values d-flex justify-content-between mb-3">
+                        <span>₹<span class="minPrice">300</span></span>
+                        <span>₹<span class="maxPrice">1500</span></span>
+                    </div>
 
-                            <div class="slider">
-                                <div class="slider-track"></div>
-                                <input type="range" min="300" max="1500" value="300" class="rangeMin">
-                                <input type="range" min="300" max="1500" value="1500" class="rangeMax">
-                            </div>
+                    <div class="slider">
+                        <div class="slider-track"></div>
+                        <input type="range" min="300" max="1500" value="300" class="rangeMin">
+                        <input type="range" min="300" max="1500" value="1500" class="rangeMax">
+                    </div>
 
-                        </div>
+                </div>
             </li>
         </ul>
         <ul class="maindropdownlist">
@@ -285,14 +322,13 @@
             <li class="sort-option">60% or more</li>
             <li class="sort-option">70% or more</li>
         </ul>
-         <div class="p-3">
-                    <button class="btn btn-light" type="submit">Apply</button>
-                </div>
+        <div class="p-3">
+            <button class="btn btn-light" type="submit">Apply</button>
+        </div>
     </div>
 
     <!-- products section one -->
-    <section class="mt-3 pt-4 pb-lg-0 pb-4"
-        style=" background: linear-gradient(90deg, rgb(251, 221, 226) 0%, #fbe9ce 100%);">
+    <section class="my-5">
         <div class="text-center mb-4">
             <h2>Products For You</h2>
         </div>
@@ -386,7 +422,8 @@
                     <button class="btn btn-light" type="submit">Apply</button>
                 </div>
             </div>
-            <div class="prod_right mb-lg-4">
+            <div class="prod_right">
+                <!-- products section one -->
                 <div class="container">
                     <div class="row g-2">
                         <div class="col-xl-3 col-md-4 col-6">
@@ -544,110 +581,11 @@
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- banner bottom -->
-    <section>
-        <img src="web/images/b1.png" width="100%" alt="">
-    </section>
-
-    <!-- products section two -->
-    <section class="pt-4 pb-lg-0 pb-4"
-        style=" background: linear-gradient(90deg, rgb(251, 221, 226) 0%, #fbe9ce 100%);">
-        <div class="text-center mb-4">
-            <h2>New Arrival</h2>
-        </div>
-        <div class="filteratmobile d-lg-none mb-3">
-            <div class="d-flex gap-2 align-items-center justify-content-center filteratmobile_sort w-100">
-                <i class="bi bi-arrow-down-up"></i>
-                <p>SORT</p>
-            </div>
-            <div class="d-flex gap-2 align-items-center justify-content-center filteratmobile_filter w-100">
-                <i class="bi bi-filter"></i>
-                <p>FILTER</p>
-            </div>
-        </div>
-        <div class="productsec">
-
-            <div class="prod_left d-lg-block d-none">
-                <h3 class="ms-3 mt-3">FILTERS</h3>
-                <ul class="maindropdownlist">
-                    <li class="maindropdown">
-                        <span>SORT</span>
-                        <i class="bi bi-chevron-down"></i>
-                    </li>
-
-                    <li class="sort-option">Price (High to Low)</li>
-                    <li class="sort-option">Price (Low to High)</li>
-                </ul>
-                <ul class="maindropdownlist designlist">
-                    <li class="maindropdown"><span>COLOR</span><i class="bi bi-chevron-down"></i></li>
-                    <li class="sort-option">Pink</li>
-                    <li class="sort-option">Multicolor</li>
-                    <li class="sort-option">Red</li>
-                    <li class="sort-option">Green</li>
-                    <li class="sort-option">Yellow</li>
-                    <li class="sort-option">Blue</li>
-                    <li class="sort-option">Purple</li>
-                    <li class="sort-option">Orange</li>
-                    <li class="sort-option">Grey</li>
-                    <li class="sort-option">Brown</li>
-                    <li class="sort-option">Beige</li>
-                    <li class="sort-option">Gold</li>
-                </ul>
-                <ul class="maindropdownlist designlist">
-                    <li class="maindropdown"><span>FABRIC</span><i class="bi bi-chevron-down"></i></li>
-                    <li class="sort-option">Georgette</li>
-                    <li class="sort-option">Chiffon</li>
-                    <li class="sort-option">Cotton</li>
-                    <li class="sort-option">Net</li>
-                    <li class="sort-option">Silk</li>
-                    <li class="sort-option">New Collection</li>
-                    <li class="sort-option">Bridal</li>
-                </ul>
-                <ul class="maindropdownlist">
-                    <li class="maindropdown">
-                        <span>PRICE</span>
-                        <!-- <i class="bi bi-chevron-down"></i> -->
-                    </li>
-
-                    <li>
-                        <div class="price-range mt-3">
-
-                            <div class="price-values d-flex justify-content-between mb-3">
-                                <span>₹<span class="minPrice">300</span></span>
-                                <span>₹<span class="maxPrice">1500</span></span>
-                            </div>
-
-                            <div class="slider">
-                                <div class="slider-track"></div>
-                                <input type="range" min="300" max="1500" value="300" class="rangeMin">
-                                <input type="range" min="300" max="1500" value="1500" class="rangeMax">
-                            </div>
-
-                        </div>
-
-                    </li>
-                </ul>
-                <ul class="maindropdownlist">
-                    <li class="maindropdown">
-                        <span>DISCOUNT</span>
-                        <i class="bi bi-chevron-down"></i>
-                    </li>
-
-                    <li class="sort-option">30% or more</li>
-                    <li class="sort-option">40% or more</li>
-                    <li class="sort-option">50% or more</li>
-                    <li class="sort-option">60% or more</li>
-                    <li class="sort-option">70% or more</li>
-                </ul>
-                <div class="p-3">
-                    <button class="btn btn-light" type="submit">Apply</button>
+                <!-- banner bottom -->
+                <div class="newbanner my-5">
+                    <img src="web/images/newbanner.jpg" width="100%" alt="">
                 </div>
-            </div>
-            <div class="prod_right mb-lg-4">
+                <!-- products section two -->
                 <div class="container">
                     <div class="row g-2">
 
@@ -773,6 +711,8 @@
         </div>
     </section>
 
+
+
     <!-- footer -->
     <footer class="mt-3 pt-5 position-relative">
         <div class="container py-5">
@@ -818,8 +758,8 @@
                         <ul>
                             <li> <a href="https://wa.me/917269010957" target="_blank"><strong>Email:</strong>
                                     info@Bahuriya.com</a></li>
-                            <li> <a href="https://wa.me/917269010957" target="_blank"><strong>Phone:</strong> +91
-                                    7269010957</a></li>
+                            <!-- <li> <a href="https://wa.me/917269010957" target="_blank"><strong>Phone:</strong> +91
+                                    7269010957</a></li> -->
                         </ul>
 
                         <div class="footer-social">
@@ -852,11 +792,14 @@
 
         function changeBanner() {
             let bannermain = document.querySelector(".bannermain img");
+            let newbanner = document.querySelector(".newbanner img")
 
             if (window.innerWidth < 768) {
                 bannermain.src = "web/images/b22.jpg";
+                newbanner.src = "web/images/newbanner22.jpg"
             } else {
                 bannermain.src = "web/images/b2.jpg";
+                newbanner.src = "web/images/newbanner.jpg"
             }
         }
         changeBanner();
