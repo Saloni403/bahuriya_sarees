@@ -10,9 +10,11 @@ clearBtn.addEventListener("click", () => {
 const ctglistdiv = document.querySelector(".ctglistdiv")
 const openctg = document.querySelector(".openctg").addEventListener("click",()=>{
     ctglistdiv.style.left="0"
+    document.body.style.overflow = "hidden"
 })
 const ctgclose = document.querySelector(".ctgclose").addEventListener("click",()=>{
     ctglistdiv.style.left="-100%"
+   document.body.style.overflow = "visible"
 })
 
 let couponcode = document.querySelector(".couponcode")

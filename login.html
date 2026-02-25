@@ -97,14 +97,11 @@
 
     <section class="loginform my-sm-5">
         <div class="container">
-            <div class="row p-3 d-flex align-items-center justify-content-center">
-                <div class="col-md-6 d-flex align-items-center justify-content-center">
-                    <div>
-                        <img src="web/images/bahuriya logo.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-md-6" id="signin">
-                    <div class="d-flex mt-md-0 mt-3 align-items-center justify-content-center flex-column w-100">
+            <div class="loginformlikeM">
+               
+                <div id="signin">
+                     <img src="web/images/couponimg.jpg" alt="">
+                    <div class="d-flex my-3 align-items-center justify-content-center flex-column w-100">
                         <p class="headinglogin">Login <span>or</span> Signup</p>
                         <form action="">
                             <div class="d-flex align-items-center justify-content-center inputnumber">
@@ -114,24 +111,24 @@
                             <div class="d-flex align-items-center gap-3 w-100">
                                 <input type="checkbox" name="signinnbox" class="w-auto" value="">
                                 <label for="signinnbox"> By continuing. I agree to the <a href=""
-                                        style="color: #fc9902;font-weight: bold;">Terms of Use</a> & <a href=""
-                                        style="color: #fc9902; font-weight: bold;">Privacy Policy</a> and I am above 18
+                                        style="color: #f25511;font-weight: bold;">Terms of Use</a> & <a href=""
+                                        style="color: #f25511; font-weight: bold;">Privacy Policy</a> and I am above 18
                                     years old.</label><br>
                             </div>
                         </form>
                         <div class="my-4 d-flex align-items-center justify-content-center w-100">
-                            <a href="javascript:void(0);" onclick="loginWithOtp()" class="button w-100">
-                                <span>CONTINUE</span>
-                            </a>
+                            <button class="btnforfilter w-100" onclick="loginWithOtp()" type="submit">CONTINUE</button>
                         </div>
-                        <p class="forhelp">Have trouble logging in? <a href="" style="color: #fc9902; font-weight: bold;">
+                        <p class="forhelp">Have trouble logging in? <a href="" style="color: #f25511; font-weight: bold;">
                                 Get Help.</a></p>
                     </div>
                 </div>
 
- <!-- login by OTP -->
-               <div class="col-md-6" id="signupbyOTP">
-                    <div class="d-flex mt-md-0 mt-3 align-items-center justify-content-center flex-column w-100">
+
+                <!-- login by OTP -->
+               <div id="signupbyOTP" class="text-center">
+                <img src="web/images/imgforverification.jpg" alt="" style="width: 100px;">
+                    <div class="d-flex my-3 align-items-center justify-content-center flex-column w-100">
                         <p class="headinglogin">Verify with OTP</p>
                         <small>Send to 1234323453</small>
                         <form action=""  class="my-4">
@@ -143,42 +140,41 @@
                             </div>
                         </form>
                        
-<p class="resendotp">Resend OTP in: <span>00:25</span></p>
+<p class="resendotp">Resend OTP in: <b>00:25</b></p>
 
-                        <p class="forhelp">Log in using <a href="javascript:void(0);" onclick="loginWithPass()" style="color: #fc9902; font-weight: bold;">
+                        <p class="forhelp">Log in using <a href="javascript:void(0);" onclick="loginWithPass()" style="color: #f25511; font-weight: bold;">
                                Password.</a></p>
-                                <p class="forhelp">Have trouble logging in? <a href="" style="color: #fc9902; font-weight: bold;">
+                                <p class="forhelp">Have trouble logging in? <a href="" style="color: #f25511; font-weight: bold;">
                                 Get Help.</a></p>
                     </div>
                 </div>
 
-                <!-- login by password -->
-               <div class="col-md-6" id="signup">
-                    <div class="d-flex mt-md-0 mt-3 align-items-center justify-content-center flex-column w-100">
+  <!-- login by password -->
+               <div id="signup">
+                    <div class="d-flex my-3 align-items-center justify-content-center flex-column w-100">
                         <p class="headinglogin">Login to your account</p>
                         <form action="">
                             <input type="email" placeholder="Email or Mobile Number">
                             <input type="password" placeholder="Password" name="" id="">
                         </form>
                         <div class="my-4 d-flex align-items-center justify-content-center w-100">
-                            <a href="javascript:void(0);" onclick="nameEnter()" class="button w-100">
-                                <span>LOGIN</span>
-                            </a>
+                            <button class="btnforfilter w-100" onclick="nameEnter()" type="submit">LOGIN</button>
                         </div>
-                        <p class="forhelp">Forgot your password? <a href="" style="color: #fc9902; font-weight: bold;">
+                        <p class="forhelp">Forgot your password? <a href="" style="color: #f25511; font-weight: bold;">
                                 Reset here.</a></p>
-                                <p class="forhelp">Have trouble logging in? <a href="" style="color: #fc9902; font-weight: bold;">
+                                <p class="forhelp">Have trouble logging in? <a href="" style="color: #f25511; font-weight: bold;">
                                 Get Help.</a></p>
                     </div>
                 </div>
 
-                <!-- enter name  -->
-                <div class="col-md-6" id="entername">
-                    <div class="d-flex mt-md-0 mt-3 align-items-center justify-content-center flex-column w-100">
+
+                  <!-- enter name  -->
+                <div id="entername">
+                    <div class="d-flex my-3 align-items-center justify-content-center flex-column w-100">
                         <div class="text-end w-100 mb-3">
-                            <a href="index.html" style="color: #fc9902;">SKIP</a>
+                            <a href="index.html" style="color: #f25511; font-weight: bold;">SKIP</a>
                         </div>
-                        <div class="d-flex gap-2 align-items-start px-3 py-2 mb-4" style="background-color: #fc9902; color: #580a46; width: 100%;">
+                        <div class="d-flex gap-2 align-items-start px-3 py-2 mb-4" style="background-color: rgba(242, 84, 17, 0.3); color: #000; width: 100%;">
                             <i class="bi bi-check-circle" style="font-size: 1.5rem;"></i>
                             <div>
                                 <h5 class="mb-0">Welcome to Bahuriya</h5>
@@ -190,15 +186,24 @@
                             <input type="text" id="name" placeholder="Type Your Name">
                         </form>
                         <div class="my-4 d-flex align-items-center justify-content-center w-100">
-                            <a href="index.html" class="button w-100">
-                                <span>CONTINUE</span>
-                            </a>
+                            <button class="btnforfilter w-100" onclick="location.href='index.html'" type="submit">CONTINUE</button>
                         </div>
-                        <p class="forhelp">Have trouble logging in? <a href="" style="color: #fc9902; font-weight: bold;">
+                        <p class="forhelp">Have trouble logging in? <a href="" style="color: #f25511; font-weight: bold;">
                                 Get Help.</a></p>
                     </div>
                 </div>
 
+
+            </div>
+           
+               
+               
+
+ 
+
+              
+
+              
             </div>
         </div>
     </section>
@@ -228,9 +233,9 @@ signup.style.display="none"
     </script>
 
     <!-- footer -->
-    <footer class="mt-3 pt-5 position-relative">
+     <footer class="mt-3 pt-5 position-relative">
         <div class="container py-5">
-            <div class="row g-4">
+            <div class="row g-4 mb-3">
                 <div class="col-lg-3 d-flex align-items-start justify-content-center text-center">
                     <div>
                         <a href="index.html">
@@ -272,7 +277,8 @@ signup.style.display="none"
                         <ul>
                             <li> <a href="https://wa.me/917269010957" target="_blank"><strong>Email:</strong>
                                     info@Bahuriya.com</a></li>
-                            <!-- <li> <a href="https://wa.me/917269010957" target="_blank"><strong>Phone:</strong> +91 7269010957</a></li> -->
+                            <!-- <li> <a href="https://wa.me/917269010957" target="_blank"><strong>Phone:</strong> +91
+                                    7269010957</a></li> -->
                         </ul>
 
                         <div class="footer-social">
@@ -282,6 +288,52 @@ signup.style.display="none"
                         </div>
                     </div>
                 </div>
+            </div>
+            <hr>
+            <div class="row footer_desc mt-3">
+                
+                <h5>ONLINE SAREE SHOPPING MADE EASY AT Bahuriya</h5>
+                <p>If you want to experience the best online saree shopping for every occasion in India, you are at the
+                    right place. Bahuriya is your ultimate destination for elegant sarees and ethnic fashion, offering a
+                    wide collection including silk sarees, cotton sarees, designer sarees, bridal wear, accessories and
+                    more. It’s time to redefine your ethnic style with our handpicked trendy collections. Shop from the
+                    comfort of your home and get your favourite sarees delivered right to your doorstep.</p>
+                    <hr>
+                <h5>BEST ONLINE SAREE SHOPPING SITE IN INDIA</h5>
+                <ol>
+                    <p>At Bahuriya, we bring you the perfect blend of tradition, style and comfort. Whether it is daily
+                        wear, office wear or wedding occasions, you will find sarees for every moment.</p>
+                    <li>Everyday Sarees – Explore lightweight cotton, linen and printed sarees that are perfect for
+                        daily wear and office styling. Stay comfortable while looking effortlessly elegant.</li>
+                    <li>Party Wear Sarees – Discover georgette, chiffon and designer sarees crafted to give you a
+                        graceful and modern look for parties and special occasions.</li>
+                    <li>
+                        Wedding & Bridal Sarees – Make your big day memorable with our luxurious bridal collection
+                        featuring silk, Banarasi, Kanjivaram and heavily embroidered sarees that reflect timeless
+                        beauty.
+                    </li>
+                    <li>Festive Sarees – Celebrate every festival in style with vibrant ethnic sarees designed with rich
+                        fabrics, traditional motifs and elegant detailing.
+                    </li>
+                </ol>
+                <hr>
+                <h5>STYLISH BLOUSES & ACCESSORIES</h5>
+                <p>Complete your look with stylish blouse designs and matching accessories. Choose from ready-made
+                    blouses, designer blouses, jewellery, clutches and more to perfectly complement your saree.</p>
+                    <hr>
+                <h5>QUALITY YOU CAN TRUST</h5>
+                <p>At Bahuriya, every saree is carefully selected to ensure premium fabric, beautiful craftsmanship and
+                    lasting comfort. From minimal elegant styles to grand statement pieces, our collection suits every
+                    taste.</p>
+                    <hr>
+                <h5>AFFORDABLE ELEGANCE AT YOUR FINGERTIPS</h5>
+                <p>Bahuriya makes ethnic fashion accessible to everyone. Explore new arrivals to stay updated with the
+                    latest saree trends. Enjoy seasonal offers, festive discounts and exclusive collections that bring
+                    luxury within your budget.</p>
+
+
+                <p>Whether it’s a wedding, festival, office event or daily wear, Bahuriya helps you express your
+                    elegance with confidence. Shop now and celebrate the beauty of sarees with Bahuriya.</p>
             </div>
         </div>
         <img src="web/images/shape.svg" class="img-fluid position-absolute top-0" alt="">
