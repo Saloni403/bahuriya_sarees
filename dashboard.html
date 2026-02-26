@@ -18,10 +18,10 @@
 </head>
 
 <body>
-   <!-- whatsapp icon on page -->
- <div class="whatsapp_icon">
-     <a href="https://wa.me/917269010957" target="_blank"><img src="web/images/whatsapp.png" width="50" alt=""></a>
- </div>
+    <!-- whatsapp icon on page -->
+    <div class="whatsapp_icon">
+        <a href="https://wa.me/917269010957" target="_blank"><img src="web/images/whatsapp.png" width="50" alt=""></a>
+    </div>
 
     <!-- toppest nav -->
     <header class="sticky-top">
@@ -44,7 +44,8 @@
                             <i class="bi bi-cart"></i> <span class="d-md-block d-none">Cart</span>
                             <div class="cart_numbering">34</div>
                         </a>
-                        <a href="wishlist.html" class="d-flex flex-column align-items-center text-dark position-relative">
+                        <a href="wishlist.html"
+                            class="d-flex flex-column align-items-center text-dark position-relative">
                             <i class="bi bi-heart"></i> <span class="d-md-block d-none">Wishlist</span>
                             <div class="wishlist_numbering">43</div>
                         </a>
@@ -95,28 +96,31 @@
     <!-- User Dashboard -->
     <section class="user-dashboard">
         <div class="container-fluid">
-             <a href="javascript:void(0)" class="btn btn-primary mt-3 d-md-none" onclick="showingDashbord()">Dashboard</a>
+            <a href="javascript:void(0)" class="btn btn-primary mt-3 d-md-none"
+                onclick="showingDashbord()">Dashboard</a>
             <div class="row">
 
                 <!-- Sidebar -->
                 <div class="col-lg-2 col-md-3 dashboard-sidebar p-0">
-                      <div class="pt-3 pe-3 text-end d-md-none">
-            <i class="bi bi-x-lg" onclick="hideDash()"></i>
-        </div>
+                    <div class="pt-3 pe-3 text-end d-md-none">
+                        <i class="bi bi-x-lg" onclick="hideDash()"></i>
+                    </div>
                     <div class="sidebar-inner">
-                        
-                        <div class="user-profile text-center py-4">
+
+                        <div class="user-profile text-center py-sm-4 py-2">
                             <i class="bi bi-person-circle fs-1"></i>
                             <h6 class="mt-2">Hello, Saloni</h6>
                         </div>
 
                         <ul class="dashboard-menu">
-                            <li class="active"><a href="javascript:void(0)" onclick="showingMyData('dashboard-content')"
+                            <li class="active"><a href="javascript:void(0)" onclick="showingMyData('dashboard-content','this')"
                                     class="w-100 "><i class="bi bi-card-heading"></i> Dashboard</a></li>
                             <li><a href="index.html" class="w-100"><i class="bi bi-house"></i> Home</a></li>
                             <li><a href="cart.html" class="w-100"><i class="bi bi-cart"></i> My Cart</a></li>
+                            <li><a href="javascript:void(0)" onclick="showingMyData('order-history','this')" class="w-100"><i class="bi bi-box"></i> Order History</a></li>
+                            <li><a href="javascript:void(0)" onclick="showingMyData('return-refund','this')" class="w-100"><i class="bi bi-cart"></i> Returns & Refund Status</a></li>
                             <li><a href="wishlist.html" class="w-100"><i class="bi bi-heart"></i> Wishlist</a></li>
-                            <li><a href="javascript:void(0)" onclick="showingMyData('profile')" class="w-100"><i
+                            <li><a href="javascript:void(0)" onclick="showingMyData('profile','this')" class="w-100"><i
                                         class="bi bi-person"></i> Profile</a></li>
                             <li class="logout"><a href="" class="w-100"><i class="bi bi-box-arrow-right"></i> Logout</a>
                             </li>
@@ -129,23 +133,6 @@
 
                     <h4 class="mb-4">Dashboard Overview</h4>
 
-                   
-<script>
-    function showingDashbord(){
-        
-        document.querySelector(".dashboard-sidebar").classList.add("showing")
-    }
-    function hideDash(){
-        document.querySelector(".dashboard-sidebar").classList.remove("showing")
-    }
-     document.querySelectorAll(".dashboard-menu a").forEach(link => {
-        link.addEventListener("click", () => {
-            if (window.innerWidth <= 768) {
-                hideDash();
-            }
-        });
-    });
-</script>
                     <!-- Summary Cards -->
                     <div class="row g-4 mb-4">
                         <div class="col-md-4">
@@ -211,89 +198,187 @@
 
                 </div>
 
-                <div class="col-lg-10 col-md-9 dashboard-section profile">
+<!-- order history section -->
+  <div class="col-lg-10 col-md-9 py-4 dashboard-section order-history">
 
-                    <h4 class="mb-4">Your Details</h4>
-
+                    <h4 class="mb-4">Order history</h4>
                     <!-- Recent Orders -->
                     <div class="recent-orders">
-                        <div class="table-responsive scroll_me">
+                        <div class="table-responsive">
                             <table class="table">
-
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Date</th>
+                                        <th>Product</th>
+                                        <th>Status</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Name </td>
-                                        <td>: Saloni</td>
+                                        <td>#BH1234</td>
+                                        <td>12 Feb 2026</td>
+                                        <td>Silk Saree</td>
+                                        <td><span class="badge bg-success">Delivered</span></td>
+                                        <td>₹2,499</td>
                                     </tr>
                                     <tr>
-                                        <td>Mobile </td>
-                                        <td>: 918767876787</td>
+                                        <td>#BH1235</td>
+                                        <td>05 Feb 2026</td>
+                                        <td>Georgette Saree</td>
+                                        <td><span class="badge bg-danger">Cancelled</span></td>
+                                        <td>₹1,899</td>
                                     </tr>
                                     <tr>
-                                        <td>Email</td>
-                                        <td>: Saloni867@gmail.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td>DOB</td>
-                                        <td>: 09-08-2026</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Address</td>
-                                        <td>: 82, near kalkaji mandir, kalkaji, delhi.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>City</td>
-                                        <td>: kalkaji</td>
-                                    </tr>
-                                    <tr>
-                                        <td>State</td>
-                                        <td>: Delhi</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Pincode</td>
-                                        <td>: 110019</td>
+                                        <td>#BH1235</td>
+                                        <td>05 Feb 2026</td>
+                                        <td>Georgette Saree</td>
+                                        <td><span class="badge bg-warning">Returned</span></td>
+                                        <td>₹1,899</td>
                                     </tr>
                                 </tbody>
                             </table>
-
                         </div>
                     </div>
 
-                    <div class="my-3">
-                        <a href="javascript:void(0)" class="button" onclick="showingMyData('edit-details')">
-                            <span>Edit</span>
-                        </a>
+                </div>
+
+<!-- return and refund section -->
+  <div class="col-lg-10 col-md-9 py-4 dashboard-section return-refund">
+
+                    <h4 class="mb-4">Order return and refund</h4>
+                    <div class="recent-orders">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Order ID</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="web/images/Net_Sarees-removebg-preview.png" width="50px" alt=""></td>
+                                        <td>#BH1234</td>
+                                        <td><span class="badge bg-success" style="cursor: pointer;" onclick="location.href='return&refund.html'">Status</span></td>
+                                    </tr>
+                                    <tr>
+                                         <td><img src="web/images/Net_Sarees-removebg-preview.png" width="50px" alt=""></td>
+                                        <td>#BH1234</td>
+                                        <td><span class="badge bg-success" style="cursor: pointer;" onclick="location.href='return&refund.html'">Status</span></td>
+                                    </tr>
+                                    <tr>
+                                         <td><img src="web/images/Net_Sarees-removebg-preview.png" width="50px" alt=""></td>
+                                        <td>#BH1234</td>
+                                        <td><span class="badge bg-success" style="cursor: pointer;" onclick="location.href='return&refund.html'">Status</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+<!-- user profile section -->
+                <div class="col-lg-10 col-md-9 dashboard-section profile">
+
+                    <!-- Personal Info -->
+                    <div class="profile-box">
+                        <div class="profile-header">
+                            <h5>Personal Information</h5>
+                            <span class="edit-link" onclick="toggleEdit(this)">Edit</span>
+                        </div>
+
+                        <label for="">Full Name</label>
+                        <div class="row-inputs">
+                            <input type="text" value="Prince" disabled>
+                        </div>
+                        <label for="">Date Of Birth</label>
+                        <div class="row-inputs">
+                            <input type="text" value="20/08/2002" disabled>
+                            <!-- <input type="text" value="Tripathi" disabled> -->
+                        </div>
+
+                        <div>
+                            <p>Your Gender</p>
+                            <div class="gender-options">
+                                <label><input type="radio" name="gender1" checked disabled> Male</label>
+                                <label><input type="radio" name="gender1" disabled> Female</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="profile-box">
+                        <div class="profile-header">
+                            <h5>Email Address</h5>
+                            <span class="edit-link" onclick="toggleEdit(this)">Edit</span>
+                        </div>
+                        <input type="email" value="princetripathi02016@gmail.com" disabled>
+                    </div>
+
+                    <!-- Mobile -->
+                    <div class="profile-box">
+                        <div class="profile-header">
+                            <h5>Mobile Number</h5>
+                            <span class="edit-link" onclick="toggleEdit(this)">Edit</span>
+                        </div>
+                        <input type="text" value="+919120665751" disabled>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="profile-box mt-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5>Address</h5>
+                            <span class="edit-link" onclick="toggleEdit(this)">Edit</span>
+                        </div>
+                        <input type="text" value="Nehru Enclave" disabled>
+
+                        <div class="row-inputs">
+                            <div>
+                                <label for="">City</label>
+                                <input type="text" value="Kalkaji" disabled>
+                            </div>
+                            <div>
+                                <label for="">State</label>
+                                <input type="text" value="Delhi" disabled>
+                            </div>
+                            <div>
+                                <label for="">Pin Code</label>
+                                <input type="text" value="110019" disabled>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-lg-10 col-md-9 dashboard-section edit-details">
-
-                    <h4 class="mb-4"> Edit Your Details</h4>
-
-                    <form action="" class="editform">
-                        <input type="text" placeholder="Name">
-                        <input type="tel" placeholder="Mobile" name="" id="">
-                        <input type="email" placeholder="email" name="" id="">
-                        <input type="date" placeholder="DOB" name="" id="">
-                       <textarea rows="3" placeholder="Full Address"></textarea>
-                        <input type="text" placeholder="City" name="" id="">
-                        <input type="text" placeholder="State" name="" id="">
-                        <input type="text" placeholder="Pincode" name="" id="">
-                    </form>
-
-                    <div class="my-3">
-                        <a href="javascript:void(0)" class="button" onclick="showingMyData('profile')">
-                            <span>Submit</span>
-                        </a>
-                    </div>
-                </div>
 
             </div>
         </div>
     </section>
 
+<script>
+                      function showingDashbord() {
+    document.querySelector('.dashboard-sidebar').classList.add('showing');
+    document.body.style.overflow = "hidden";
+}
+
+function hideDash() {
+    document.querySelector('.dashboard-sidebar').classList.remove('showing');
+    document.body.style.overflow = "auto";
+}
+                        document.querySelectorAll(".dashboard-menu a").forEach(link => {
+                            link.addEventListener("click", () => {
+                                if (window.innerWidth <= 768) {
+                                    hideDash();
+                                }
+                            });
+                        });
+                    </script>  
+
     <script>
-        function showingMyData(value) {
+        function showingMyData(value, el) {
             document.querySelectorAll('.dashboard-section').forEach(section => {
                 section.classList.remove('showing');
             });
@@ -302,11 +387,48 @@
                 my_data.classList.add("showing")
             }
 
+            document.querySelectorAll('.dashboard-menu li').forEach(li=>{
+        li.classList.remove('active');
+    });
+
+    el.closest("li").classList.add("active");
         }
     </script>
 
+    <script>
+
+        function toggleEdit(button) {
+
+            let box = button.closest(".profile-box");
+            let inputs = box.querySelectorAll("input");
+
+            if (button.innerText === "Edit") {
+
+                inputs.forEach(input => {
+                    input.removeAttribute("disabled");
+                    input.style.background = "#fff";
+                    input.style.border = "1px solid #2874f0";
+                });
+
+                button.innerText = "Save";
+
+            } else {
+
+                inputs.forEach(input => {
+                    input.setAttribute("disabled", true);
+                    input.style.background = "#f5f5f5";
+                    input.style.border = "1px solid #d5d5d5";
+                });
+
+                button.innerText = "Edit";
+            }
+
+        }
+
+    </script>
+
     <!-- footer -->
-   <footer class="mt-3 pt-5 position-relative">
+    <footer class="mt-3 pt-5 position-relative">
         <div class="container py-5">
             <div class="row g-4 mb-3">
                 <div class="col-lg-3 d-flex align-items-start justify-content-center text-center">
@@ -364,14 +486,14 @@
             </div>
             <hr>
             <div class="row footer_desc mt-3">
-                
+
                 <h5>ONLINE SAREE SHOPPING MADE EASY AT Bahuriya</h5>
                 <p>If you want to experience the best online saree shopping for every occasion in India, you are at the
                     right place. Bahuriya is your ultimate destination for elegant sarees and ethnic fashion, offering a
                     wide collection including silk sarees, cotton sarees, designer sarees, bridal wear, accessories and
                     more. It’s time to redefine your ethnic style with our handpicked trendy collections. Shop from the
                     comfort of your home and get your favourite sarees delivered right to your doorstep.</p>
-                    <hr>
+                <hr>
                 <h5>BEST ONLINE SAREE SHOPPING SITE IN INDIA</h5>
                 <ol>
                     <p>At Bahuriya, we bring you the perfect blend of tradition, style and comfort. Whether it is daily
@@ -393,12 +515,12 @@
                 <h5>STYLISH BLOUSES & ACCESSORIES</h5>
                 <p>Complete your look with stylish blouse designs and matching accessories. Choose from ready-made
                     blouses, designer blouses, jewellery, clutches and more to perfectly complement your saree.</p>
-                    <hr>
+                <hr>
                 <h5>QUALITY YOU CAN TRUST</h5>
                 <p>At Bahuriya, every saree is carefully selected to ensure premium fabric, beautiful craftsmanship and
                     lasting comfort. From minimal elegant styles to grand statement pieces, our collection suits every
                     taste.</p>
-                    <hr>
+                <hr>
                 <h5>AFFORDABLE ELEGANCE AT YOUR FINGERTIPS</h5>
                 <p>Bahuriya makes ethnic fashion accessible to everyone. Explore new arrivals to stay updated with the
                     latest saree trends. Enjoy seasonal offers, festive discounts and exclusive collections that bring
