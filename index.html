@@ -248,27 +248,24 @@
     </section>
 
     <!-- mobile filter div -->
-    <div class="sort_div d-lg-none">
-        <div class="p-3 text-end">
-            <i class="bi bi-x-lg"></i>
-        </div>
-        <form action="" class="p-3">
-            <div class="d-flex gap-2 py-2">
-                <input type="checkbox" name="" id="hightolow"><label for="hightolow">Price (High to Low)</label> <br>
-            </div>
-            <div class="d-flex gap-2 py-2">
-                <input type="checkbox" name="" id="lowtohigh"><label for="lowtohigh">Price (Low to High)</label>
-            </div>
-            <div class="pt-3">
-                <button class="btnforfilter" type="submit">Apply</button>
-            </div>
-        </form>
-    </div>
-
+  
     <div class="filter_div d-lg-none">
         <div class="p-3 text-end">
             <i class="bi bi-x-lg"></i>
         </div>
+     <form action="" class="p-3">
+    <p class="maindropdown"><span>SORT</span></p>
+
+    <div class="d-flex gap-2 py-2">
+        <input type="radio" name="sort" id="hightolow">
+        <label for="hightolow">Price (High to Low)</label>
+    </div>
+
+    <div class="d-flex gap-2 py-2">
+        <input type="radio" name="sort" id="lowtohigh">
+        <label for="lowtohigh">Price (Low to High)</label>
+    </div>
+</form>
         <ul class="maindropdownlist designlist">
             <li class="maindropdown"><span>COLOR</span><i class="bi bi-chevron-down"></i></li>
             <li class="sort-option">Pink</li>
@@ -340,10 +337,6 @@
             <h2>Products For You</h2>
         </div>
         <div class="filteratmobile d-lg-none mb-3">
-            <div class="d-flex gap-2 align-items-center justify-content-center filteratmobile_sort w-100">
-                <i class="bi bi-arrow-down-up"></i>
-                <p>SORT</p>
-            </div>
             <div class="d-flex gap-2 align-items-center justify-content-center filteratmobile_filter w-100">
                 <i class="bi bi-filter"></i>
                 <p>FILTER</p>

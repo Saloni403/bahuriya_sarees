@@ -31,13 +31,13 @@
 
 
         // color js
-           const colordiv = document.querySelector(".colordiv");
+//            const colordiv = document.querySelector(".colordiv");
 
-const colors = ["red", "blue", "green", "yellow", "black", "pink", "orange"];
+// const colors = ["red", "blue", "green", "yellow", "black", "pink", "orange"];
 
-colors.forEach(color => {
-  const colorBox = document.createElement("div");
-  colorBox.className = "color";
-  colorBox.style.backgroundColor = color;
-  colordiv.appendChild(colorBox);
-});
+// colors.forEach(color => {
+//   const colorBox = document.createElement("div");
+//   colorBox.className = "color";
+//   colorBox.style.backgroundColor = color;
+//   colordiv.appendChild(colorBox);
+// });
